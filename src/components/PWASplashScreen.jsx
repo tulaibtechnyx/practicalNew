@@ -46,7 +46,35 @@ export default function PWASplashScreen() {
     if (!mounted || !showSplash) return null;
 
     return (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
+        <>
+            <style jsx>{`
+                @keyframes slideRight {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+                    50% {
+                        transform: translateX(100%);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+                @keyframes dotsAnimation {
+                    0%, 20% {
+                        opacity: 0.3;
+                    }
+                    50% {
+                        opacity: 0.7;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                .loading-text {
+                    animation: dotsAnimation 1.5s ease-in-out infinite;
+                }
+            `}</style>
+            <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#000_1px,transparent_1px)] bg-[length:20px_20px]"></div>
@@ -95,25 +123,8 @@ export default function PWASplashScreen() {
 
                 {/* Loading Text with Animation */}
                 <div className="text-center mt-4">
-                    <style jsx>{`
-                        @keyframes dots {
-                            0%, 20% {
-                                content: ".";
-                            }
-                            40% {
-                                content: "..";
-                            }
-                            60%, 100% {
-                                content: "...";
-                            }
-                        }
-                        .loading-dots {
-                            animation: dots 1.5s steps(4, end) infinite;
-                        }
-                    `}</style>
                     <p className="text-sm text-gray-600 font-medium">
-                        Getting&#32;
-                        <span className="loading-dots">.</span>
+                        Getting ready<span className="loading-text">...</span>
                     </p>
                 </div>
 
@@ -126,20 +137,7 @@ export default function PWASplashScreen() {
                     </div>
                 </div>
             </div>
-
-            <style jsx>{`
-                @keyframes slideRight {
-                    0% {
-                        transform: translateX(-100%);
-                    }
-                    50% {
-                        transform: translateX(100%);
-                    }
-                    100% {
-                        transform: translateX(-100%);
-                    }
-                }
-            `}</style>
         </div>
+        </>
     );
 }
