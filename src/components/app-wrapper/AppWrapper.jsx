@@ -13,6 +13,7 @@ import HelpConfirmationPopCustom from '../popUp/HelpConfirmationPopCustom';
 import AppConstants from '@helpers/AppConstants';
 import { getCache } from '../../helpers/CommonFunc';
 import { getPricingData, setdecorationQuizData } from '../../store/reducers/homeReducer';
+import PWASplashScreen from '../PWASplashScreen';
 
 
 
@@ -236,6 +237,7 @@ const AppWrapper = ({ children }) => {
 
     return (
         <React.Fragment>
+            <PWASplashScreen />
             {
                 isExcluded && modalOpen &&
                 <CustomConfirmationPopup

@@ -38,6 +38,18 @@ const MyApp = ({ Component, ...rest }) => {
     router.events.on("routeChangeError", handleStop);
     setMount(true);
 
+    // Register service worker for PWA
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/" })
+        .then((registration) => {
+          console.log("Service Worker registered successfully:", registration);
+        })
+        .catch((error) => {
+          console.warn("Service Worker registration failed:", error);
+        });
+    }
+
     return () => {
       router.events.off("routeChangeStart", handleStart);
       router.events.off("routeChangeComplete", handleStop);
