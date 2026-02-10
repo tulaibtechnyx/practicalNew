@@ -1,0 +1,1050 @@
+.mealDetailBox {
+  padding: 0;
+  flex: 0 0 100%;
+  max-width: 100%;
+  &.unFavourited {
+    display: none;
+  }
+  &.disable{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &.postingFavourite {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  @media (min-width: 768px) {
+    flex: 0 0 47%;
+    max-width: 47%;
+    margin-right: 20px;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 44%;
+    max-width: 44%;
+    margin-right: 20px;
+  }
+  @media (min-width: 1441px) {
+    flex: 0 0 31%;
+    max-width: 31%;
+    margin-right: 20px;
+  }
+  .mealBox {
+    margin-top: 14px;
+    background: white;
+    border-radius: 15px;
+    padding: 12px 13px 0;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    border: 1px solid #e6e6e6;
+    @media (min-width: 768px) {
+      padding: 17px 13px 0;
+      flex-wrap: nowrap;
+      border: 1px solid #e6e6e6;
+      padding-bottom: 15px;
+      flex-direction: column;
+      min-height: 220px;
+    }
+    @media (min-width: 1199px) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .unlockIcon {
+      button{
+        color: #179c78;
+      svg{
+          path{
+          }
+        }
+      }
+      &.disable {
+        pointer-events: none;
+      }
+      position: absolute;
+      right: 60px;
+      top: 8px;
+      min-width: 50px;
+      &.protienPresent {
+        right: 120px;
+      }
+      &:hover {
+        .tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .tooltip {
+        border-radius: 5px;
+        z-index: 99;
+        background-color: #179c78;
+        opacity: 0;
+        visibility: hidden;
+        top: -70px;
+        position: absolute;
+        width: 200px;
+        left: -160px;
+        transition: ease-in-out 0.5s;
+        padding: 15px;
+        @media (min-width: 1200px) {
+          left: -90px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -11px;
+          left: 164px;
+          border-style: solid;
+          border-width: 20px 20px 0 20px;
+          border-color: #179c79 transparent transparent transparent;
+          @media (min-width: 1200px) {
+            left: 94px;
+          }
+         
+        }
+        &::after {
+          background-color: transparent;
+          width: 100%;
+          bottom: 0;
+          content: "";
+          height: 20px;
+          position: absolute;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      button {
+        min-width: 50px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 8px;
+
+        // @media (min-width: 768px) {
+        //   font-size: 8px;
+        // }
+        svg {
+          height: 25px;
+          margin-top: -4px;
+          @media (min-width: 768px) {
+            height: 26px;
+            width: 33px;
+          }
+          path {
+            transition: ease-in-out 0.3s all;
+          }
+        }
+      }
+      .selected {
+        color: #fa7324;
+        svg {
+          height: 18px;
+          @media (min-width: 768px) {
+            height: 28px;
+          }
+          path {
+            fill: #fa7324;
+          }
+        }
+      }
+      &.sty2 {
+        pointer-events: none;
+        right: 70px;
+        top: 6px;
+        @media (min-width: 768px) {
+          right: 65px;
+          top: 5px;
+        }
+        button {
+          padding: 0;
+          svg {
+            width: 50px;
+            height: 29px;
+            @media (min-width: 768px) {
+              width: 55px;
+              height: 31px;
+            }
+          }
+        }
+      }
+      // Favourite Icon Readonly
+      &.favourite {
+        &.disable {
+          pointer-events: none;
+        }
+          width: 55px;
+          height: 45px;
+          right: 60px;
+          top: 4.5px;
+          @media (min-width: 768px) {
+            top: 4px;
+          }
+        display: flex;
+        justify-content: center;
+        button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          svg {
+            position: absolute;
+            top: 15%;
+            width: 20px !important;
+            height: 100% !important;
+            fill: none;
+            scale: 0.85;
+            @media (min-width: 768px) {
+              width: auto !important;
+              height: auto !important;
+            }
+            path {
+              fill: none;
+            }
+          }
+          .text {
+            position: absolute;
+            bottom: 2.5px;
+            color: #fa7324;
+            @media (min-width: 768px) {
+              bottom: 1.5px;
+            }
+          }
+          &.isFavourite {
+            svg {
+              stroke: #fa7324;
+              path {
+                fill: #fa7324;
+              }
+            }
+          }
+        }
+        &.protienPresent {
+          right: 120px;
+        }
+        @media (min-width: 768px) {
+          button {
+            svg {
+              scale: 1;
+            }
+            .text {
+              // bottom: 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        top: 8px;
+      }
+    }
+    .lockIcon {
+      button{
+        color: #bd1414;
+      svg{
+        margin-left: 5px;
+        @media (max-width: 768px) {
+          margin-left: 0px;
+          }
+        }
+      }
+      &.disable {
+        pointer-events: none;
+      }
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      min-width: 50px;
+      button {
+        min-width: 50px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 8px;
+
+        // @media (min-width: 768px) {
+        //   font-size: 8px;
+        // }
+        svg {
+          height: 25px;
+          @media (min-width: 768px) {
+            height: 26px;
+            width: 33px;
+          }
+          path {
+            transition: ease-in-out 0.3s all;
+          }
+        }
+      }
+      .selected {
+        color: #fa7324;
+        svg {
+          height: 18px;
+          @media (min-width: 768px) {
+            height: 28px;
+          }
+          path {
+            fill: #fa7324;
+          }
+        }
+      }
+      &.sty2 {
+        pointer-events: none;
+        right: 70px;
+        top: 6px;
+        @media (min-width: 768px) {
+          right: 65px;
+          top: 5px;
+        }
+        button {
+          padding: 0;
+          svg {
+            width: 50px;
+            height: 29px;
+            @media (min-width: 768px) {
+              width: 55px;
+              height: 31px;
+            }
+          }
+        }
+      }
+      // Favourite Icon Readonly
+      &.favourite {
+        &.disable {
+          pointer-events: none;
+        }
+          width: 55px;
+          height: 45px;
+          right: 60px;
+          top: 4.5px;
+          @media (min-width: 768px) {
+            top: 4px;
+          }
+        display: flex;
+        justify-content: center;
+        button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          svg {
+            position: absolute;
+            top: 15%;
+            width: 20px !important;
+            height: 100% !important;
+            fill: none;
+            scale: 0.85;
+            @media (min-width: 768px) {
+              width: auto !important;
+              height: auto !important;
+            }
+            path {
+              fill: none;
+            }
+          }
+          .text {
+            position: absolute;
+            bottom: 2.5px;
+            color: #fa7324;
+            @media (min-width: 768px) {
+              bottom: 1.5px;
+            }
+          }
+          &.isFavourite {
+            svg {
+              stroke: #fa7324;
+              path {
+                fill: #fa7324;
+              }
+            }
+          }
+        }
+        &.protienPresent {
+          right: 120px;
+        }
+        @media (min-width: 768px) {
+          button {
+            svg {
+              scale: 1;
+            }
+            .text {
+              // bottom: 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        top: 8px;
+      }
+    }
+    .swapIcon {
+      &.isExecutive{
+        button{
+          color: #179c78;
+        svg{
+            path{
+              fill: #179c78 !important  ;
+            }
+          }
+        }
+      }
+      &.disable {
+        pointer-events: none;
+      }
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      min-width: 50px;
+      button {
+        min-width: 50px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 8px;
+        &.swapButton:not(.disableBTN) {
+          svg {
+            transform-origin: center; /* Center the SVG for rotation */
+            animation: rotateHorizontal 4.2s ease-in-out infinite; /* 2 rotations + 2.2s pause */
+          }
+        }
+        &.disableBTN {
+          cursor: not-allowed;
+          pointer-events: none;
+          opacity: 0.5;
+        }
+        svg {
+          height: 18px;
+          @media (min-width: 768px) {
+            height: 22px;
+            width: 33px;
+          }
+          path {
+            transition: ease-in-out 0.3s all;
+            fill: #179c78;
+          }
+        }
+      }
+      .selected {
+        color: #fa7324;
+        svg {
+          height: 18px;
+          @media (min-width: 768px) {
+            height: 28px;
+          }
+          path {
+            fill: #fa7324;
+          }
+        }
+      }
+      &.sty2 {
+        // pointer-events: ;
+        right: 70px;
+        top: 6px;
+        @media (min-width: 768px) {
+          right: 65px;
+          top: 5px;
+        }
+        button {
+          padding: 0;
+          svg {
+            width: 50px;
+            height: 29px;
+            @media (min-width: 768px) {
+              width: 55px;
+              height: 31px;
+            }
+          }
+        }
+      }
+      // Favourite Icon Readonly
+      &.favourite {
+        &.disable {
+          pointer-events: none;
+        }
+          width: 55px;
+          height: 45px;
+          right: 60px;
+          top: 4.5px;
+          @media (min-width: 768px) {
+            top: 4px;
+          }
+        display: flex;
+        justify-content: center;
+        button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          svg {
+            position: absolute;
+            top: 15%;
+            width: 20px !important;
+            height: 100% !important;
+            fill: none;
+            scale: 0.85;
+            @media (min-width: 768px) {
+              width: auto !important;
+              height: auto !important;
+            }
+            path {
+              fill: none;
+            }
+          }
+          .text {
+            position: absolute;
+            bottom: 2.5px;
+            color: #fa7324;
+            @media (min-width: 768px) {
+              bottom: 1.5px;
+            }
+          }
+          &.isFavourite {
+            svg {
+              stroke: #fa7324;
+              path {
+                fill: #fa7324;
+              }
+            }
+          }
+        }
+        &.protienPresent {
+          right: 120px;
+        }
+        @media (min-width: 768px) {
+          button {
+            svg {
+              scale: 1;
+            }
+            .text {
+              // bottom: 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        top: 8px;
+      }
+    }
+    .postImg {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .boxImg {
+        border-radius: 12px;
+        overflow: hidden;
+        height: 78px;
+        width: 78px;
+        flex: 0 0 78px;
+        max-width: 78px;
+        @media (min-width: 375px) {
+          height: 88px;
+          width: 88px;
+          flex: 0 0 88px;
+          max-width: 88px;
+        }
+        @media (min-width: 768px) {
+          height: 120px;
+          width: 120px;
+          flex: 0 0 120px;
+          max-width: 120px;
+        }
+        .secWrap {
+          position: relative;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            @media (min-width: 768px) {
+              width: 120px;
+              height: 120px;
+            }
+          }
+          svg {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            bottom: 9px;
+            right: 5px;
+            @media (min-width: 768px) {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .lockOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); // Semi-transparent black
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 12px;
+            // padding: 10px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          @media (min-width: 768px) {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+      .boxText {
+        flex: 0 0 60%;
+        max-width: 60%;
+        padding-top: 7px;
+        @media (min-width: 768px) {
+          font-size: 18px !important;
+          padding-top: 25px;
+        }
+        h3 {
+          font-size: 15px !important;
+          margin-bottom: 10px;
+          margin-top: 28px;
+          font-weight: 600;
+          padding-right: 50px;
+          padding-top: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          min-height: auto;
+          -webkit-box-orient: vertical;
+          @media (min-width: 768px) {
+            margin-top: 0px;
+            min-height: 46.78px;
+            font-size: 18px !important;
+            padding-right: 0;
+          }
+        }
+        p {
+          font-size: 12px;
+          margin-bottom: 5px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          line-clamp: 3;
+          -webkit-box-orient: vertical;
+          min-height: auto;
+          @media (min-width: 768px) {
+            min-height: 58.5px;
+            font-size: 15px;
+            padding-bottom: 0;
+          }
+        }
+        .read_more {
+          color: #179c78;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          font-size: 12px;
+        }
+      }
+      @media (min-width: 768px) {
+        // flex: 0 0 45%;
+        // max-width: 45%;
+        max-width: 100%;
+      }
+      @media (min-width: 1400px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .caloriesCount {
+        background: #179c78;
+        box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 7px 2px;
+        min-width: 85px;
+
+        p {
+          @media (min-width: 768px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .postDetail {
+      &.isExecutive{
+        .caloriesCountBox{
+          .caloriesBox{
+            // border-color:  #fa7324 !important;
+            border-color:  #179c78 !important;
+            p{
+              color: black;
+            }
+            &.sty2{
+              p{color: #fff !important;}
+            }
+            }
+           
+            
+        }
+      }
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 10px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      position: relative;
+      @media (min-width: 768px) {
+        margin-top: 8px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: space-between;
+      }
+      &.sty2 {
+        justify-content: space-between;
+        @media (min-width: 375px) {
+          justify-content: flex-end;
+        }
+        @media (min-width: 768px) {
+          justify-content: space-between;
+        }
+      }
+      // @media (min-width: 1400px) {
+      //   flex: 0 0 56%;
+      //   max-width: 56%;
+      //   margin-left: 0;
+      //   margin-top: 30px;
+      // }
+      // @media (min-width: 1199px) {
+      //   max-width: 60%;
+      //   flex: 0 0 60%;
+      // }
+      .chilli {
+        position: absolute;
+        left: 14px;
+        top: 0;
+        display: flex;
+        border: 1px solid #179c78;
+        padding: 0px 5px;
+        border-radius: 5px;
+        @media (min-width: 768px) {
+          left: 20px;
+          top: -22px;
+          padding: 0px 5px;
+        }
+        svg {
+          width: 15px;
+          height: 15px;
+          @media (min-width: 768px) {
+            width: 26px;
+            height: 26px;
+          }
+        }
+        p {
+          margin-top: 0px;
+          font-size: 12px;
+          @media (min-width: 768px) {
+            margin-top: 4px;
+            font-size: 18px;
+          }
+        }
+      }
+      .caloriesCount {
+        flex: 0 0 78px;
+        max-width: 78px;
+        background: #179c78;
+        box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 0px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 3.5px 2px;
+        min-width: 78px;
+        height: 20px;
+        &.hide {
+          display: none;
+          @media (min-width: 768px) {
+            display: block;
+          }
+        }
+        &.Mobile {
+          border-radius: 12px;
+          display: block;
+          flex: 0 0 120px;
+          max-width: 120px;
+          min-width: 120px;
+          height: 31px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: transparent;
+          border: 1px solid #179c78;
+          p {
+            color: #179c78;
+          }
+          @media (min-width: 768px) {
+            display: none;
+            flex: 0 0 120px;
+            max-width: 120px;
+            min-width: 120px;
+            height: 31px;
+          }
+        }
+        &.BYO {
+          &.Mobile {
+            border-radius: 12px;
+            display: block;
+            flex: 0 0 120px;
+            max-width: 120px;
+            min-width: 120px;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: 1px solid #179c78;
+            p {
+              color: #179c78;
+            }
+            @media (min-width: 768px) {
+              display: none;
+              flex: 0 0 120px;
+              max-width: 120px;
+              min-width: 120px;
+              height: 31px;
+            }
+          }
+          &.hide {
+            display: none;
+
+            @media (min-width: 768px) {
+              display: block;
+            }
+          }
+          p {
+            margin-top: 0 !important;
+          }
+        }
+        &.sty2 {
+          background-color: #fab03b;
+          &.Mobile {
+            background-color: transparent;
+            border-color: #fab03b;
+            p {
+              color: #fab03b;
+            }
+          }
+        }
+        @media (min-width: 768px) {
+          flex: 0 0 88px;
+          max-width: 88px;
+          min-width: 85px;
+          height: 20px;
+        }
+        @media (min-width: 768px) {
+          border-radius: 12px;
+          height: 31px;
+          flex: 0 0 120px;
+          max-width: 120px;
+          padding: 7px 2px;
+        }
+        p {
+          @media (min-width: 768px) {
+            font-size: 15px;
+          }
+        }
+      }
+      .boxTitle {
+        @media (min-width: 768px) {
+          font-size: 18px !important;
+        }
+      }
+      p {
+        margin-top: 3px;
+        @media (min-width: 768px) {
+          font-size: 15px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .caloriesCountBox {
+    flex: 0 0 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0px;
+      margin-top: 10px;
+      justify-content: flex-start;
+    }
+    .caloriesBox {
+      border: 0.5px solid #179c78;
+      border-radius: 10px;
+      padding: 6.5px 0;
+      flex: 0 0 32px;
+      max-width: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 2px;
+      &:first-child {
+        margin-left: 0;
+      }
+      @media (min-width: 375px) {
+        flex: 0 0 36px;
+        max-width: 36px;
+        margin: 0 2px;
+        padding: 8.5px 0;
+      }
+      @media (min-width: 768px) {
+        flex: 0 0 20%;
+        max-width: 20%;
+        margin: 0 2.5px;
+        padding: 8.5px 0;
+      }
+      @media (min-width: 1199px) {
+        max-width: 22%;
+        flex: 0 0 22%;
+      }
+      p {
+        margin: 0 !important;
+        @media (min-width: 768px) {
+          font-size: 10px !important;
+        }
+      }
+      &.sty2 {
+        background-color: #179c78;
+        border-color: #179c78;
+        p {
+          font-size: 15px !important;
+          color: #fff;
+          @media (min-width: 768px) {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  }
+  .totalCalories {
+    padding: 30px 10px 0;
+    .totalCaloriesBox {
+      text-align: center;
+      border: 1px solid #179c78;
+      border-radius: 12px;
+      padding: 28px;
+    }
+    @media (min-width: 768px) {
+      padding: 30px 0 0;
+      .totalCaloriesBox {
+        background: #d1ebe4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        .heading {
+          font-size: 15px;
+        }
+        .caloriesTotalBox {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          flex: 0 0 70%;
+          max-width: 70%;
+          .heading {
+            font-size: 25px;
+            padding-left: 25px;
+            border-left: 1px solid #179c78;
+            margin-left: 8px;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+            @media (min-width: 1199px) {
+              font-size: 25px;
+            }
+          }
+        }
+        .caloriesCountBox {
+          flex: 0 0 60%;
+          max-width: 60%;
+          margin: 0;
+          justify-content: flex-end;
+          @media (min-width: 768px) {
+            max-width: 80%;
+            flex: 0 0 80%;
+          }
+
+          .caloriesBox {
+            border: none;
+            p {
+              font-size: 15px !important;
+              color: #000;
+              @media (min-width: 768px) {
+                font-size: 12px !important;
+              }
+              @media (min-width: 1199px) {
+                font-size: 15px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.sty2 {
+      .caloriesCountBox {
+        max-width: 100%;
+        justify-content: center;
+        @media (min-width: 768px) {
+          max-width: 60%;
+        }
+        .caloriesBox {
+          padding: 6.5px 0;
+          margin: 0 2px;
+          @media (min-width: 768px) {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes rotateHorizontal {
+  0% {
+    transform: rotateY(0deg); /* Start position */
+  }
+  23.81% {
+    transform: rotateY(360deg); /* First rotation complete */
+  }
+  47.62% {
+    transform: rotateY(720deg); /* Second rotation complete */
+  }
+  100% {
+    transform: rotateY(720deg); /* Pause at 720deg for 2.2s */
+  }
+}

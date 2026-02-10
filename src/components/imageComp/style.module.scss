@@ -1,0 +1,25 @@
+.secBg {
+  &.isExecutive{
+    background-color: #179c78;
+  }
+   background-color: #179c78;
+   margin: 0;
+   padding-top: 3px;
+   @media (min-width: 576px) {
+     padding-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+      padding-top: 57px;
+    }
+
+     span {
+       display: block !important;
+     }
+
+   img {
+     display: block;
+     width: 100%;
+        height: 100%;
+   }
+}

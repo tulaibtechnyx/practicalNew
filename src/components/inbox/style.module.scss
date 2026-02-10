@@ -1,0 +1,141 @@
+.isExecutive{
+
+    background-color: #f7f7f7 !important;
+ 
+}
+.inbox_sec {
+  background-color: #179c78;
+  position: relative;
+
+  &.sty2 {
+    background-color: white;
+    h1 {
+      color: #000;
+    }
+
+    p {
+      color: #000;
+    }
+
+    .bg_img {
+      img {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .bg_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    img {
+      opacity: 0.09;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    position: relative;
+    padding: 40px 0 50px;
+    z-index: 3;
+    width: 100%;
+
+    .content_wrap {
+      .heading {
+         text-align: center;
+         font-size: 37px;
+        padding-bottom: 20px;
+
+         @media (min-width: 768px) {
+           font-size: 40px;
+            padding-bottom: 24px;
+         }
+       }
+
+       .para {
+        text-align: center;
+        padding-bottom: 17.5px;
+        max-width: 60%;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+          padding-bottom: 28px;
+          max-width: 85%;
+        }
+      }
+
+      .para2 {
+        margin-top: 25px !important;
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+          max-width: 85%;
+        }
+
+        p {
+          font-size: 12px !important;
+        }
+      }
+
+      .btn_sec {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        .btn {
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          min-width: 230px;
+          margin-bottom: 12px;
+          height: 35px;
+
+          @media (min-width: 768px) {
+            min-width: 313px;
+            padding-left: 40px;
+            justify-content: flex-start;
+          }
+        }
+
+        .errorMessage {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+          width: 100%;
+          bottom: -15px;
+
+          @media (min-width: 768px) {
+            bottom: auto;
+          }
+        }
+
+        .sty_1 {
+          .btn_sub {
+            background-color: #ffffff;
+            color: #179c78;
+            min-width: 230px;
+            margin-bottom: 12px;
+            height: 35px;
+            border: none;
+
+            @media (min-width: 768px) {
+              min-width: 114px;
+              margin-left: -114px;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

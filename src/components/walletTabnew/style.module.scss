@@ -1,0 +1,193 @@
+/* ===== HEADERS (Desktop) ===== */
+.orderHistorySec {
+  .head_sec_Desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: grid;
+      /* Left: 5 cols (Date, Amount, Expiry, Status, Tx Type) | Right: Description */
+      grid-template-columns: 65% 35%;
+      align-items: center;
+      padding: 10px 20px;
+      column-gap: 24px;
+    }
+
+    .date_meal_plan_wrap {
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+        column-gap: 16px;
+        padding: 2px 0;
+      }
+
+      .orderID {
+        @media (min-width: 768px) {
+          /* remove any 25% widths in header */
+          flex: 0 0 auto;
+          max-width: none;
+        }
+      }
+    }
+
+    .duration_sec {
+      padding: 2px 0;
+
+      @media (min-width: 768px) {
+        /* occupies the second grid column (35%) */
+        padding: 8px 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  /* ===== ROW CARD ===== */
+  .order_history {
+    padding: 21px;
+    border: 1px solid #d1ebe4;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 65% 35%; /* align with header */
+      align-items: center;
+      column-gap: 24px;
+      padding: 20.5px 18px;
+      border-radius: 24px;
+    }
+
+    .date_meal_plan_wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 0;
+
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+        column-gap: 16px;
+        padding: 8px 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+
+      .orderID {
+        margin-bottom: 5px;
+        max-width: 45%;
+        flex: 0 0 45%;
+
+        @media (min-width: 575px) {
+          max-width: 32%;
+          flex: 0 0 32%;
+        }
+
+        /* ✅ Desktop: remove the old 25% override and lock to grid cells */
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+          max-width: none;
+          flex: 0 0 auto;
+          min-width: 0; /* allow text ellipsis if needed */
+        }
+
+        .transaction_type {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          white-space: nowrap; /* prevent CREDIT + arrow from breaking */
+          @media (min-width: 768px) {
+            justify-content: center;
+          }
+        }
+
+        .debit,
+        .credit {
+          display: flex;
+          flex: 0 0 auto; /* arrow never shrinks */
+          svg {
+            margin-left: 0; /* gap handles spacing */
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .debit svg path { fill: #fa7324; }
+        .credit svg { transform: rotate(180deg); }
+        .credit svg path { fill: #179c78; }
+      }
+    }
+
+    .duration_sec {
+      display: flex;
+      align-items: center;
+      padding: 2px 0;
+      margin-bottom: 5px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+        padding: 8px 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+
+      .durationCheck {
+        flex: 0 0 80%;
+        max-width: 80%;
+        @media (min-width: 768px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .mob_only {
+      @media (min-width: 768px) { display: none; }
+    }
+    .ext_mar {
+      margin-top: 1px;
+      @media (min-width: 768px) { margin-top: 0; }
+    }
+  }
+}
+
+.orderHeading {
+  padding-top: 205px;
+}
+.anchorArea {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container_main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+  .balance_header_wrapper {
+    &.isExecutive{
+      p{
+        color: #fa7324  ;
+      }
+    }
+    padding: 10px;
+    .balance_header {
+      font-size: 30px;
+    }
+  }
+  .value_header {
+    min-height: 5vh;
+    &.isExecutive{
+    border-color:  #fa7324;
+    h1{
+      color: #000;
+    }
+
+    }
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: 1px solid #179c78;
+    max-width: 100%;
+    width: 100%;
+  }
+}

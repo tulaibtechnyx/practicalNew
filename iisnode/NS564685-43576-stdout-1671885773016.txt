@@ -1,0 +1,140 @@
+info  - Loaded env from C:\inetpub\wwwroot\practical-web\.env
+info  - Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc" https://nextjs.org/docs/messages/swc-disabled
+info  - automatically enabled Fast Refresh for 1 custom loader
+event - compiled client and server successfully in 4.4s (396 modules)
+> Ready on http://localhost:\\.\pipe\91ddf0c6-4689-44e2-885c-a64a888593bc
+wait  - compiling / (client and server)...
+event - compiled client and server successfully in 3.4s (1482 modules)
+ action persist/PERSIST @ 04:43:04.095
+   prev state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null }
+  }
+   action     {
+    type: 'persist/PERSIST',
+    register: [Function: register],
+    rehydrate: [Function: rehydrate]
+  }
+   next state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null },
+    _persist: { version: -1, rehydrated: false }
+  }
+ action persist/REHYDRATE @ 04:43:04.277
+   prev state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null },
+    _persist: { version: -1, rehydrated: false }
+  }
+   action     {
+    type: 'persist/REHYDRATE',
+    payload: undefined,
+    err: undefined,
+    key: 'root'
+  }
+   next state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null },
+    _persist: { version: -1, rehydrated: true }
+  }
+wait  - compiling /_error (client and server)...
+wait  - compiling /api/auth/[...nextauth] (client and server)...
+event - compiled client and server successfully in 843 ms (1495 modules)
+wait  - compiling...
+event - compiled successfully in 219 ms (1326 modules)
+ action persist/PERSIST @ 04:43:15.533
+   prev state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null }
+  }
+   action     {
+    type: 'persist/PERSIST',
+    register: [Function: register],
+    rehydrate: [Function: rehydrate]
+  }
+   next state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null },
+    _persist: { version: -1, rehydrated: false }
+  }
+ action persist/REHYDRATE @ 04:43:15.840
+   prev state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null },
+    _persist: { version: -1, rehydrated: false }
+  }
+   action     {
+    type: 'persist/REHYDRATE',
+    payload: undefined,
+    err: undefined,
+    key: 'root'
+  }
+   next state {
+    quiz: {
+      questions: [],
+      commonQuestions: [],
+      formFields: null,
+      result: null,
+      currentQuizType: ''
+    },
+    auth: { user: null, error: null, userDetails: null },
+    home: { startUpData: null, orders: [], faqQuestions: [], resturants: [] },
+    profile: { userProfile: null },
+    _persist: { version: -1, rehydrated: true }
+  }

@@ -1,0 +1,206 @@
+    .mainWrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .formImages {
+            .image1 {
+                position: absolute;
+                width: fit-content;
+                left: 0;
+                img {
+                    width: 20%;
+                    height: auto;
+                    margin-top: 0;
+                }
+            }
+            .image2 {
+                position: absolute;
+                width: fit-content;
+                left: 0;
+                img {
+                    width: 20%;
+                    height: auto;
+                    margin-top: 56rem;
+                }
+            }
+            .image3 {
+                position: absolute;
+                width: fit-content;
+                text-align: right;
+                right: 0;
+                img {
+                    width:20%;
+                    height: auto;
+                    margin-top: 0;
+                }
+            }
+            .image4{
+                position: absolute;
+                width: fit-content;
+                text-align: right;
+                right: 0;
+                img {
+                    width:20%;
+                    height: auto;
+                    margin-top: 56rem;
+                }
+            }
+        }
+
+        .container {
+            max-width: 39.125rem;
+            justify-content: center;
+            padding: 0 20px;
+
+            .personalInformationContainer {
+                margin-top: 5.375rem;
+                
+                
+                .personalInformationHeadingContainer {
+                    width: 100%;
+                    text-align: center;
+                    
+                    .personalInformationHeading {
+                        font-size: 2rem;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
+                
+                .personalInformationFormContainer {
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 1.375rem;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .personalInformationForm {
+                        margin-top: 1rem;
+                        
+                        // min-width: 39.125rem;
+                        .MuiInputBase-input {
+
+                            // &::placeholder{
+                                color: black;
+                                // }
+                            }
+                            
+                            &:first-child {
+                                margin-top: 0rem;
+                                
+                        }
+                    }
+                }
+            }
+
+            .dietryInformationContainer {
+                margin-top: 2.125rem;
+
+                .dietryInformationHeadingContainer {
+
+                    .dietryInformationHeading {
+                        text-align: center;
+                        font-size: 2rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .dietryInformationCardContainer {
+                    margin-top: 1rem;
+                    border: 1px solid black;
+                    padding: 2.5rem 1.875rem;
+                    border-radius: 1.25rem;
+        
+                    .MuiInputBase-input {
+                        color: black;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 2.125rem;
+                    }
+
+                    .dietryInformationCardHeadingContainer {
+                        margin-bottom: 1.375rem;
+
+                        .dietryInformationCardHeading {
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .bottomButtonContainer {
+                margin-bottom: 3.5rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .ErrorMessage {
+                margin: 0.25rem 0;
+                color: red;
+                font-size: 0.75rem;
+                text-align: left;
+                padding: 1px 0 0 0.625rem;
+
+                &:last-child {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width : 992px) and (max-width:1100px){
+        .mainWrapper {
+            .formImages {
+                .image1 {
+                position: absolute;
+                width: 16%;
+                left: 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 5rem;
+                }
+            }
+            .image2 {
+                position: absolute;
+                width: 16%;
+                left: 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 56rem;
+                }
+            }
+            .image3 {
+                position: absolute;
+                width: 16%;
+                right: 0;
+                img {
+                    width:100%;
+                    height: auto;
+                    margin-top: 5rem;
+                }
+            }
+            .image4{
+                position: absolute;
+                width: 16%;
+                right: 0;
+                img {
+                    width:100%;
+                    height: auto;
+                    margin-top: 56rem;
+                }
+            }
+        }
+    }
+    }
+    @media screen and (max-width : 991px) {
+        .mainWrapper {
+            .formImages {
+                display: none;
+        }
+    }
+    }

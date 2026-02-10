@@ -1,0 +1,47 @@
+.scritWrapper {
+  &.isExecutive {
+    .content {
+      p {
+        a {
+          color: #fa7324;
+        }
+      }
+    }
+
+    .CtaWrapper {
+      a {
+        border-color: #119a77;
+        color: #fff;
+        background-color: #119a77;
+        &:hover {
+          background-color: #fef1ea;
+          border-color: #fa7324;
+          color: #fa7324;
+        }
+      }
+    }
+  }
+  .content {
+    p {
+      padding-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin: auto;
+      a {
+        display: inline;
+        color: #119a77;
+        text-decoration: underline;
+      }
+    }
+  }
+  .CtaWrapper {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    a {
+      padding: 5px 21.5px !important;
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+}

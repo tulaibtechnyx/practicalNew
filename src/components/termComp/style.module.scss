@@ -1,0 +1,18 @@
+.termwapper {
+  .heading {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .para {
+    padding-bottom: 10px;
+    text-align: left;
+    max-width: 100%;
+  }
+  .listWrap{
+    padding: 0;
+    .list {
+      padding: 5px 0;
+    }
+  }
+  
+}

@@ -1,0 +1,138 @@
+.QuickRecap {
+  max-width: 1276px;
+  margin: 0 auto;
+  padding: 50px 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    @media (min-width: 1301px) {
+      margin: 0;
+    }
+    .textAreaWrap {
+      border-radius: 24px;
+      background-color: #f4f4f8;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+      // text-align: center;
+      @media (min-width: 992px) {
+        flex: 0 0 49.22%;
+        max-width: 49.22%;
+        margin-bottom: 0px;
+      }
+      .contentWrap {
+        text-align: center;
+        padding: 42px 16px 24px;
+        @media (min-width: 992px) {
+          padding: 42px 57px 24px;
+        }
+        .Text {
+          text-align: center;
+          .heading {
+            padding-bottom: 35px;
+          }
+          .SMheading {
+            padding-bottom: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .portionPara {
+          padding-bottom: 35px;
+        }
+        .midHead {
+          padding-top: 24px;
+          padding-bottom: 10px;
+          text-align: center;
+        }
+        .quiz {
+          padding-top: 27px;
+          text-align: center;
+          font-size: 12px;
+          @media (min-width: 768px) {
+            font-size: 15px;
+          }
+          a {
+            display: inline;
+            color: #179c78;
+          }
+        }
+        .MealType {
+          padding: 20px 0;
+          border-radius: 24px;
+          border: 1px #179c78 solid;
+          max-width: 452px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          &.sty1 {
+            background-color: #d1ebe4;
+            padding: 0;
+            padding-top: 32px;
+            .mealStyle {
+              margin-bottom: 32px;
+            }
+          }
+          .mealStyle {
+            display: flex;
+            flex: 0 0 44%;
+            max-width: 44%;
+            align-items: center;
+            @media (min-width: 768px) {
+              flex: 0 0 40%;
+              max-width: 40%;
+            }
+            .Number {
+              width: 100%;
+              max-width: 40px;
+              height: 40px;
+              font-size: 25px;
+              font-weight: 500;
+              line-height: 32px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #179c78;
+              border-radius: 26px;
+              &.sty1 {
+                background: #fab03b;
+                color: #3c3c3b;
+              }
+            }
+            .mealDetail {
+              margin-left: 9px;
+              @media (min-width: 768px) {
+                margin-left: 18px;
+              }
+              p {
+                font-weight: 500;
+                font-size: 12px;
+                @media (min-width: 992px) {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+        .caloriesBox {
+          border-radius: 24px;
+          max-width: 318px;
+          margin: 20px auto;
+          border: 1px solid #179c78;
+          h2 {
+            font-weight: 400;
+            padding: 17px;
+            color: #179c78;
+            font-size: 35px;
+            text-align: center;
+            font-family: "AWConquerorInline";
+          }
+        }
+      }
+    }
+  }
+}

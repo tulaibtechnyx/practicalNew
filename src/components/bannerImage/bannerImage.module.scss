@@ -1,0 +1,501 @@
+.bannerImage {
+    height: 79vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    // overflow-x: hidden;
+
+    @media (min-width: 768px) and (max-height: 840px) {
+        height: 80vh;
+    }
+
+    @media (min-width: 768px) and (max-height: 700px) {
+        height: 90vh;
+    }
+
+    @media (max-width: 768px) {
+        align-items: flex-end;
+        height: 63vh;
+        max-height: 700px;
+    }
+
+    @media (max-width: 768px) and (max-height: 844px) {
+        height: 70vh;
+    }
+
+    @media (max-width: 768px) and (max-height: 844px) {
+        height: 80vh;
+    }
+
+    @media (min-width: 768px) and (max-height: 600px) {
+        height: 100vh;
+    }
+
+    .bgImage {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        // Below CSS for prallelex 
+        // background-attachment: fixed;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            object-position: center;
+
+            @media (max-width: 768px) {
+                object-position: 22% !important;
+            }
+        }
+    }
+
+    .ContentWrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 22px;
+
+        @media (max-width: 1480px) {
+            margin-top: 0px;
+        }
+
+        @media (max-width: 768px) {
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100%;
+            justify-content: end;
+        }
+
+        .innerBox {
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-top: 110px;
+            }
+
+            h1 {
+                width: fit-content;
+                background-color: #179C78;
+                color: #fff;
+                padding: 21px 30px 21px 73px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 77px;
+
+                @media (max-width: 1680px) {
+                    font-size: 55.2px;
+                    line-height: 60px;
+                }
+
+                @media (max-width: 1440px) {
+                    font-size: 50.7px;
+                    line-height: 60px;
+                }
+
+                @media (max-width: 1280px) {
+                    font-size: 46.7px;
+                    line-height: 56px;
+                    padding: 18px 28px 18px 63px;
+                }
+
+                @media (max-width: 1200px) {
+                    font-size: 42.98px;
+                    line-height: 56px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 35px;
+                    line-height: 48px;
+                    padding: 16px 26px 16px 52px;
+                }
+
+                @media (max-width: 768px) {
+                    margin-bottom: 10.63px;
+                    padding: 9.289px 13.27px 9.289px 32.29px;
+                    border-radius: 0px 13.27px 13.27px 0px;
+                    font-size: 26.54px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 34.059px;
+                    max-width: 90%;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 20px;
+                    width: 80%;
+                }
+
+            }
+
+            h2 {
+
+                color: #fff;
+                margin-top: 10px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                width: fit-content;
+                padding: 21px 30px 21px 73px;
+                background-color: #179C78;
+                margin-bottom: 52px;
+                font-size: 41px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 77px;
+
+                span {
+                    position: relative;
+                    display: inline-block;
+
+                    &::after {
+                        position: absolute;
+                        left: 0;
+                        bottom: 10px;
+                        content: '';
+                        width: 100%;
+                        height: 3px;
+                        background: #fff;
+
+                        @media (max-width: 1680px) {
+                            bottom: 0px;
+                        }
+
+                        @media (max-width: 1440px) {
+                            bottom: -2px;
+                        }
+
+                        @media (max-width: 1280px) {
+                            bottom: -5px;
+                        }
+
+                        @media (max-width: 768px) {
+                            bottom: -3px;
+                            height: 1.5px;
+                        }
+
+                        @media (max-width: 400px) {
+                            bottom: 0px;
+                            height: 1.5px;
+                        }
+                    }
+                }
+
+                @media (max-width: 1680px) {
+                    font-size: 38.13px;
+                    line-height: 54px;
+                    margin-bottom: 49px;
+                }
+
+                @media (max-width: 1440px) {
+                    font-size: 35.4px;
+                    line-height: 48px;
+                    margin-bottom: 46px;
+                }
+
+                @media (max-width: 1280px) {
+                    font-size: 32.97px;
+                    line-height: 38px;
+                    margin-bottom: 28px;
+                    padding: 18px 28px 18px 63px;
+                }
+
+                @media (max-width: 1200px) {
+                    font-size: 30.67px;
+                    max-width: 75%;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 28px;
+                    line-height: 36x;
+                    padding: 16px 26px 16px 52px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 21.14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 27.1px;
+                    padding: 9.289px 13.27px 9.289px 32.29px;
+                    border-radius: 0px 13.27px 13.27px 0px;
+                    max-width: 68%;
+                    width: fit-content;
+                    margin-bottom: 54.42px;
+                    margin-top: 10.63px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 18px;
+                }
+
+                // @media (max-width: 768px) and (max-height: 844px) {
+                //     margin-bottom: 20px;
+                // }
+            }
+
+            .ctaBox {
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+
+                .cta {
+                    box-shadow: 0px 0px 29.54px 0px #0000008C;
+                    margin-left: 80px;
+                    background-color: #FA7324;
+                    max-width: 357px;
+                    width: 100%;
+                    border-color: #FA7324;
+                    color: #fff;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    padding: 0;
+                    padding-top: 1px;
+                    height: 85px;
+                    border-radius: 87.381px;
+                    font-size: 31px;
+                    font-weight: 500;
+                    line-height: normal;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media (max-width: 1680px) {
+                        font-size: 29px;
+                        padding: 0px;
+                        height: 80px;
+                        max-width: 350px;
+                    }
+
+                    @media (max-width: 1440px) {
+                        font-size: 28px;
+                        padding: 0px;
+                        height: 76px;
+                        max-width: 347px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        height: 64px;
+                        max-width: 285px;
+                        font-size: 27px;
+                        margin-left: 50px;
+                    }
+
+                    @media (max-width: 1200px) {
+                        font-size: 26px;
+                    }
+
+                    @media (max-width: 991px) {
+                        height: 56px;
+                        max-width: 240px;
+                        font-size: 25px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 21.258px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        padding: 0;
+                        max-width: 212.9px;
+                        height: 50.7px;
+                        vertical-align: middle;
+                        border-radius: 59.051px;
+                        margin: 0 auto;
+                        box-shadow: 0px 0px 19.961px 0px rgba(0, 0, 0, 0.55);
+                    }
+
+                    @media (max-width: 400px) {
+                        height: 48px;
+                        max-width: 200px;
+                        font-size: 18px;
+                    }
+
+                }
+            }
+        }
+
+        .ratingBox {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .bgImageBottom {
+        pointer-events: none;
+        position: absolute;
+        bottom: -65px;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        background-size: cover;
+        // background-position: 40% 33.7%;
+        background-position: center calc(34.5%);
+        // background-color: #fff;
+        background: linear-gradient(180deg, #FFF 0%, #FFF 87.02%, rgba(255, 255, 255, 0.00) 100%);
+        clip-path: polygon(-2.607% 63.503%, -2.607% 63.503%, -4.376% 61.912%, -6.163% 61.89%, -7.941% 63.197%, -9.679% 65.591%, -11.349% 68.833%, -12.921% 72.682%, -14.367% 76.895%, -15.658% 81.233%, -16.764% 85.455%, -17.656% 89.319%, -17.656% 100%, 119.323% 100%, 119.323% 6.086%, 119.323% 6.086%, 118.135% 3.737%, 116.67% 1.763%, 114.968% 0.43%, 113.07% 0.006%, 111.015% 0.756%, 108.843% 2.948%, 106.596% 6.847%, 104.312% 12.721%, 102.032% 20.835%, 99.797% 31.457%, 99.797% 31.457%, 97.592% 42.061%, 95.399% 50.129%, 93.246% 55.93%, 91.165% 59.738%, 89.187% 61.823%, 87.341% 62.459%, 85.658% 61.916%, 84.168% 60.467%, 82.903% 58.383%, 81.891% 55.937%, 81.891% 55.937%, 80.535% 51.522%, 78.868% 46.848%, 76.937% 42.22%, 74.789% 37.945%, 72.472% 34.328%, 70.031% 31.673%, 67.514% 30.287%, 64.969% 30.476%, 62.441% 32.544%, 59.978% 36.798%, 59.978% 36.798%, 57.562% 41.415%, 55.166% 44.498%, 52.82% 46.236%, 50.558% 46.822%, 48.412% 46.445%, 46.413% 45.297%, 44.594% 43.567%, 42.987% 41.447%, 41.624% 39.127%, 40.538% 36.798%, 40.538% 36.798%, 39.638% 33.938%, 38.47% 31.23%, 37.051% 28.938%, 35.4% 27.323%, 33.535% 26.65%, 31.475% 27.179%, 29.238% 29.176%, 26.843% 32.901%, 24.308% 38.618%, 21.651% 46.59%, 21.651% 46.59%, 18.423% 56.641%, 15.49% 64.03%, 12.807% 69.059%, 10.331% 72.028%, 8.019% 73.24%, 5.828% 72.996%, 3.713% 71.599%, 1.631% 69.35%, -0.461% 66.551%, -2.607% 63.503%);
+        height: 15vw;
+        // min-width: 1440px;
+
+        @media (max-width: 1440px) {
+            bottom: -50px;
+            background-position: center 26%;
+        }
+
+        @media (max-width: 1280px) {
+            bottom: -30px;
+            background-position: center 22.5%;
+        }
+
+        @media (max-width: 1024px) {
+            background-position: center 11.5%;
+        }
+
+        @media (max-width: 991px) {
+            background-position: center 8.7%;
+        }
+
+        @media (max-width: 768px) {
+            bottom: -50px;
+            background-position: center 24%;
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 87.02%, rgba(255, 255, 255, 0) 100%);
+            height: 90px;
+            clip-path: polygon(-135.546% 50.796%, -135.546% 50.796%, -141.071% 48.983%, -146.655% 48.958%, -152.208% 50.446%, -157.638% 53.174%, -162.854% 56.866%, -167.767% 61.249%, -172.284% 66.047%, -176.315% 70.988%, -179.77% 75.796%, -182.558% 80.197%, -182.558% 92.361%, 245.348% 92.361%, 245.348% -14.596%, 245.348% -14.596%, 241.638% -17.272%, 237.062% -19.52%, 231.746% -21.038%, 225.815% -21.521%, 219.395% -20.666%, 212.612% -18.17%, 205.591% -13.73%, 198.457% -7.04%, 191.335% 2.201%, 184.352% 14.298%, 184.352% 14.298%, 177.466% 26.375%, 170.613% 35.563%, 163.888% 42.17%, 157.388% 46.507%, 151.207% 48.882%, 145.44% 49.606%, 140.183% 48.988%, 135.53% 47.337%, 131.576% 44.964%, 128.417% 42.178%, 128.417% 42.178%, 124.18% 37.15%, 118.972% 31.826%, 112.941% 26.556%, 106.231% 21.687%, 98.991% 17.567%, 91.366% 14.544%, 83.505% 12.966%, 75.552% 13.181%, 67.656% 15.537%, 59.962% 20.381%, 59.962% 20.381%, 52.416% 25.639%, 44.929% 29.15%, 37.602% 31.13%, 30.536% 31.797%, 23.831% 31.368%, 17.587% 30.06%, 11.905% 28.09%, 6.885% 25.675%, 2.627% 23.033%, -0.768% 20.381%, -0.768% 20.381%, -3.577% 17.124%, -7.227% 14.04%, -11.66% 11.429%, -16.817% 9.59%, -22.642% 8.823%, -29.077% 9.427%, -36.065% 11.7%, -43.547% 15.943%, -51.467% 22.454%, -59.766% 31.533%, -59.766% 31.533%, -69.849% 42.98%, -79.013% 51.396%, -87.394% 57.122%, -95.128% 60.504%, -102.351% 61.884%, -109.197% 61.607%, -115.804% 60.016%, -122.308% 57.454%, -128.843% 54.266%, -135.546% 50.796%);
+        }
+    }
+}
+
+.googleReviewsContainer {
+    display: flex;
+    flex-direction: column;
+    /* Stack stars above text */
+    align-items: center;
+    // padding: 10px;
+    // border: 1px solid #fff; /* Light border similar to the image */
+    // border-radius: 16px;
+    // background-color: #fff; /* White background */
+    // font-family: Arial, sans-serif; /* A common, clean font */
+    width: fit-content;
+    /* Adjust width to content */
+    margin-right: 54px;
+    margin-bottom: 0;
+
+    @media (max-width: 1440px) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 998px) {
+        margin-right: 40px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 52.45px;
+        margin-bottom: 51.5px;
+        margin-right: 18px;
+        margin-left: auto;
+    }
+
+    @media (max-width: 768px) and (max-height: 660px) {
+        margin-top: 52.45px;
+        margin-bottom: 54px;
+    }
+
+    img {
+        width: 298px;
+        height: auto;
+
+        @media (max-width: 1680px) {
+            width: 268px;
+        }
+
+        @media (max-width: 1440px) {
+            width: 248px;
+        }
+
+        @media (max-width: 1280px) {
+            width: 228px;
+        }
+
+        @media (max-width: 991px) {
+            width: 200px;
+        }
+
+        @media (max-width: 768px) {
+            width: 155px;
+        }
+    }
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 10px;
+    /* Space between stars and text */
+}
+
+.staricon {
+    width: 30px;
+    /* Adjust star size */
+    height: 30px;
+    color: #FFC107;
+    /* Google's gold star color */
+    margin: 0 2px;
+    /* Small space between stars */
+}
+
+.googletext {
+    font-size: 24px;
+    /* Larger font size for "Google Reviews" */
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+    /* Align the base of the letters */
+}
+
+/* Specific Google logo colors */
+.googleg {
+    color: #4285F4;
+}
+
+/* Blue */
+.googleo1 {
+    color: #EA4335;
+}
+
+/* Red */
+.googleo2 {
+    color: #F8BC02;
+}
+
+/* Yellow */
+.googleg2 {
+    color: #4285F4;
+}
+
+/* Blue */
+.googlel {
+    color: #34A853;
+}
+
+/* Green */
+.googlee {
+    color: #EA4335;
+}
+
+/* Red */
+
+.reviewstext {
+    color: #3C4043;
+    /* Dark gray for "Reviews" */
+    margin-left: 5px;
+    /* Space between "Google" and "Reviews" */
+    font-weight: 500;
+    /* "Reviews" is usually not bold in the logo */
+}

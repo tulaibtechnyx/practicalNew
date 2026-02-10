@@ -1,0 +1,14 @@
+.boxSlider {
+  height: 100%;
+  .boxCol {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .heading {
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+}

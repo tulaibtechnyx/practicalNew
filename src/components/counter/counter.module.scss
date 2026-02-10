@@ -1,0 +1,27 @@
+.counter {
+  .counter_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .image {
+      cursor: pointer;
+    }
+    .counter_display {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #119a77;
+      border-radius: 17px;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      align-items: center;
+      @media (min-width: 768px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  .btn {
+    margin-top: 22px;
+  }
+}

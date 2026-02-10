@@ -1,0 +1,320 @@
+.recomendedSec {
+  position: relative;
+  background-color: #179c78;
+  padding-top: 43px;
+  padding-bottom: 83px;
+  overflow: hidden;
+  &::before {
+    z-index: 0;
+    content: "";
+    background-image: url(../../../public/images/bg/quiz-bg.png);
+    background-size: contain;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+  }
+  .secWrap {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .MainHead {
+      padding-bottom: 35px;
+    }
+    .CaloriesWrap {
+      max-width: 60%;
+      margin: 0 auto;
+      display: flex;
+      // justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 14px;
+      @media (max-width: 768px) {
+        max-width: 90%;
+
+      }
+
+
+      // @media (min-width: 768px) {
+      //   align-items: flex-start;
+      //   flex-direction: row;
+      // }
+      // @media (min-width: 1301px) {
+      //   padding: 0;
+      // }
+      .caloriesCount {
+        text-align: center;
+        max-width: 100%;
+        flex: 0 0 100%;
+        width: 100%;
+        // @media (min-width: 768px) {
+        //   max-width: 42.2%;
+        //   flex: 0 0 42.2%;
+        //   width: auto;
+        // }
+        p {
+          font-weight: 500;
+        }
+        .caloriesBox {
+          padding: 12.4px;
+          border-radius: 24px;
+          max-width: 100%;
+          margin: 20px auto;
+          background-color: #fff;
+          position: relative;
+          text-align: center;
+          .vat {
+            font-size: 15px;
+          }
+          h2 {
+            font-weight: 400;
+            color: #179c78;
+            font-size: 35px;
+            font-family: "AWConquerorInline";
+            @media (min-width: 992px) {
+              font-size: 40px;
+            }
+          }
+          &.sty2 {
+            padding: 13.25px !important;
+          }
+          &.sty1 {
+            padding: 14.25px;
+          }
+
+          // Adding css for discount logic
+         .MultiAmountBox {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:15px;
+            height:52px;
+          
+            .finalAmount{
+              font-family: 'AWConquerorInline';
+              font-weight: 400;
+              color: #179c78;
+              font-size: 36px;
+            @media (max-width: 430px) {
+              font-size: 30px;
+            
+            }
+            @media (max-width: 400px) {
+              font-size: 26px;
+            
+            }
+            }
+            .totalAmount{ 
+              position: relative;
+              font-size:22px;
+              color:#AEAEAE;
+              font-family: "EuclidCircularB";
+              text-decoration:line-through;
+              // font-weight:400 !important;
+              white-space: nowrap; /* would center line-through in the middle of the wrapped lines */
+              @media (max-width: 450px) {
+                font-size: 16px;
+              
+              }
+              @media (max-width: 400px) {
+                font-size: 14px;
+              
+              }
+            }
+            .totalAmount::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 41%;
+              height: 2px;
+              background: #aeaeae;
+            }        
+            .percentage{
+                font-size:18px;
+                // color:#AC232C;
+                color: #fa7324;
+                @media (max-width: 450px) {
+                  font-size: 14px;
+                
+                }
+
+            }
+            // &.isExecutive {
+            //   .finalAmount {
+            //     font-family: 'AWConquerorInline';
+            //   }
+            //   .totalAmount {
+            //     font-family: "EuclidCircularB";
+            //   }
+            //   .percentage {
+            //     color: #fa7324;
+            //   }
+            // }
+          }
+
+
+        }
+        .disclaimer {
+          font-size: 15px;
+        }
+      }
+      &.sty1 {
+        .caloriesCount {
+          .caloriesBox {
+            padding: 11.4px;
+            background-color: transparent;
+            border: 1px solid #179c78;
+          }
+        }
+      }
+      .equal {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        &.isExecutive {
+          svg {
+            path {
+              fill: #fa7324;
+            }
+          }
+        }
+        &.sty2 {
+          &.isExecutive {
+            svg {
+              circle {
+                fill: transparent;
+              }
+            }
+          }
+        }
+        // @media (min-width: 768px) {
+        //   margin-top: 55px;
+        // }
+        svg {
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+    .ctaWrap {
+      padding-top: 20px;
+      &.sty1 {
+        button {
+          border-color: #179c78;
+          background-color: #179c78;
+          color: #fff;
+          max-width: 313px;
+          width: 100%;
+          &:hover {
+            background-color: transparent;
+            color: #179c78;
+          }
+        }
+      }
+      a {
+        background-color: #179c78;
+        border-color: #fff;
+        color: #fff;
+        max-width: 313px;
+        width: 100%;
+      
+        &:hover {
+          background-color: #fff;
+          color: #179c78;
+        }
+        &.btnExecutive {
+          &:hover {
+            background-color: #fef1ea !important;
+            color: #fa7324;
+          }
+        }
+      }
+      .promoButton {
+        background-color: #179c78;
+        border-color: #fff;
+        color: #fff;
+        max-width: 313px;
+        width: 100%;
+      
+        &:hover {
+          background-color: #fff;
+          color: #179c78;
+        }
+        &.btnExecutive {
+          &:hover {
+            background-color: #fef1ea !important;
+            color: #fa7324;
+          }
+        }
+      }
+    }
+    .MenuWrapper {
+      padding-top: 20px;
+      .moreOptionsBar {
+        border-radius: 12px;
+        // background-color: #f4f4f8;
+        padding: 20px 0;
+        margin: 0 10px;
+        // @media (min-width: 768px) {
+        //   border-radius: 24px;
+        //   padding: 30px 0;
+        // }
+        .textWrapperstyles {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          .para {
+            position: relative;
+            // &::before {
+            //   content: "";
+            //   background-image: url(../../../public/images/icons/arrowBlack.png);
+            //   background-size: contain;
+            //   width: 25px;
+            //   position: absolute;
+            //   height: 20px;
+            //   right: 5px;
+            //   top: 10px;
+            //   transform: rotate(180deg);
+            //   // @media (min-width: 768px) {
+            //   //   right: -60px;
+            //   //   top: 7px;
+            //   // }
+            // }
+          }
+          p {
+            max-width: fit-content;
+            // margin: 0 auto;
+            cursor: pointer;
+            // padding: 0 50px;
+            // @media (min-width: 768px) {
+            //   padding: 0;
+            // }
+          }
+        }
+      }
+      .menuItems {
+        // margin-top: 20px;
+        .contentWrapper {
+          margin: 0 10px;
+          max-width: 1276px;
+          // padding: 35px 0px 47px;
+
+          // background-color: #f4f4f8;
+          border-radius: 24px;
+          // @media (min-width: 768px) {
+          //   padding: 76px 0px 81px;
+          // }
+          // @media (min-width: 1301px) {
+          //   margin: 0 auto;
+          // }
+          @media (max-width: 400px) {
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}

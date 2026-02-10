@@ -1,0 +1,92 @@
+trigger:
+  - dev
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  - group: Dev
+
+stages:
+  - stage: BuildDev
+    jobs:
+      - job: BuildDev
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '14.x'
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                rm -rf .env
+              workingDirectory: '$(Build.SourcesDirectory)'
+
+          - script: |
+              npm install --legacy-peer-deps
+            displayName: 'Installing node modules'
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)/build-automation/'
+              Contents: '.env.dev'
+              OverWrite: true
+              TargetFolder: '$(Build.SourcesDirectory)/'
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                mv .env.dev .env
+              workingDirectory: '$(Build.SourcesDirectory)/'
+
+          - task: replacetokens@3
+            displayName: 'Replace tokens in .env'
+            inputs:
+              rootDirectory: '$(Build.SourcesDirectory)/'
+              targetFiles: .env
+              tokenPrefix: '['
+              tokenSuffix: ']'
+
+          - script: |
+              node --max_old_space_size=4096 ./node_modules/.bin/next build
+            displayName: 'Running Build'
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)/build/standalone/'
+              Contents: '**'
+              TargetFolder: '$(Build.SourcesDirectory)/deploy/dev/'
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)/build/static/'
+              Contents: '**'
+              TargetFolder: '$(Build.SourcesDirectory)/deploy/dev/build/static/'
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)/public/'
+              Contents: '**'
+              TargetFolder: '$(Build.SourcesDirectory)/deploy/dev/public/'
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)/build-automation/'
+              Contents: 'web.config'
+              TargetFolder: '$(Build.SourcesDirectory)/deploy/dev/'
+
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: '$(Build.SourcesDirectory)/deploy/dev/'
+              includeRootFolder: false
+              archiveType: 'zip'
+              archiveFile: '$(Build.ArtifactStagingDirectory)/dev.zip'
+              replaceExistingArchive: true
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)/dev.zip'
+              ArtifactName: 'dev'
+              publishLocation: 'Container'

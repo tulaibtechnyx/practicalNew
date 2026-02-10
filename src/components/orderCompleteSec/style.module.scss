@@ -1,0 +1,221 @@
+.userManagementWrapper {
+  background: url(../../../public/images/banner/slider1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  padding-top: 60px;
+  z-index: 9;
+  position: relative;
+  min-height: calc(100vh - 150px);
+  &::before {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+  }
+  @media (min-width: 768px) {
+    background: url(../../../public/images/banner/slider1desktopnew.png);
+    min-height: calc(100vh - 270px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 14%;
+    &::before {
+      display: none;
+    }
+  }
+  .secWrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    max-width: 990px;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 140px;
+    @media (min-width: 768px) {
+      padding-top: 0px;
+      border-radius: 24px;
+      flex-direction: row;
+    }
+    .secHeading {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 100%;
+      max-width: 100%;
+      @media (min-width: 768px) {
+        background: rgba(60, 60, 59, 0.9);
+        flex: 0 0 45%;
+        max-width: 45%;
+      }
+      @media (min-width: 992px) {
+        flex: 0 0 57.272%;
+        max-width: 57.272%;
+      }
+      .pageTitle {
+        // padding: 60px 50px;
+        padding-left: 0px;
+        text-align: center;
+        color: #fff;
+        @media (min-width: 768px) {
+          padding-left: 50px;
+          // padding: 127px 30px;
+          text-align: left;
+          color: #179c78;
+        }
+        @media (min-width: 992px) {
+          padding-left: 50px;
+          // padding: 127px 58px;
+          text-align: left;
+          color: #179c78;
+        }
+        &.isExecutive {
+          color: #fa7324;
+        }
+      }
+      .description {
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 30px;
+        @media (min-width: 768px) {
+          text-align: left;
+          padding-left: 50px;
+          padding-bottom: 0px;
+        }
+      }
+    }
+    .secDetail {
+      background-color: #f4f4f8;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 24px 0 33px 0;
+      border-radius: 12px;
+      @media (min-width: 768px) {
+        border-radius: 0px;
+        padding: 45px 0;
+        flex: 0 0 55%;
+        max-width: 55%;
+      }
+      @media (min-width: 992px) {
+        border-radius: 0px;
+        padding: 45px 0;
+        flex: 0 0 42.728%;
+        max-width: 42.728%;
+      }
+      .secPara {
+        padding-bottom: 10px;
+        font-size: 20px;
+        @media (min-width: 768px) {
+          padding-bottom: 20px;
+        }
+      }
+      .secPara2 {
+        font-size: 16px;
+        padding-bottom: 20px;
+      }
+      .innerWrapper {
+        display: flex;
+        padding: 0 27px 8px 13.5px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        @media (min-width: 768px) {
+          display: flex;
+          padding: 0 30.5px;
+          justify-content: space-between;
+          padding-bottom: 20px;
+        }
+        .textDetail {
+          .para {
+            font-size: 12px;
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+          }
+          .extraProteinPrice {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+        .amount {
+          min-width: 110px;
+          .para {
+            font-size: 12px;
+            text-align: right;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .totalWrapper {
+        display: flex;
+        margin: 0 27px 0 13.5px;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 20px;
+        position: relative;
+        @media (min-width: 768px) {
+          display: flex;
+          margin: 0 30.5px;
+          justify-content: space-between;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          position: relative;
+        }
+        .textDetail {
+          .para {
+            font-size: 12px;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+          }
+        }
+        .amount {
+          .para {
+            font-size: 12px;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+          }
+        }
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: grey;
+          position: absolute;
+          top: 0;
+        }
+      }
+      .cta {
+        margin: auto;
+        max-width: 100%;
+        padding: 0 27px 0 13.5px;
+        @media (min-width: 768px) {
+          max-width: 300px;
+          padding: 0;
+        }
+        button {
+          width: 100%;
+          &.isExecutive {
+            &:hover {
+              background-color: #fef1ea;
+              border-color: #fa7324;
+              color: #fa7324;
+            }
+          }
+        }
+      }
+    }
+  }
+}

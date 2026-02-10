@@ -1,0 +1,91 @@
+.smashSec {
+  // height: 100vh;
+  text-align: center;
+  background-image: url(../../../public/images/bg/quiz-bg.png);
+  background-size: cover;
+  .smashWrapper {
+    max-width: 566px;
+    margin: 0 auto;
+    .logo {
+      margin-top: 55px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-family: "AWConquerorInline";
+      font-size: 42px;
+      padding-bottom: 20px;
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+    .smashSlide {
+      img {
+        padding-bottom: 35px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        @media (min-width: 768px) {
+          font-size: 27px;
+        }
+        @media (min-width: 1400px) {
+          font-size: 35px;
+        }
+      }
+      .paraSM {
+        font-size: 10px;
+        font-weight: 300;
+        padding-bottom: 32px;
+        @media (min-width: 768px) {
+          font-size: 13px;
+        }
+        @media (min-width: 1400px) {
+          font-size: 15px;
+        }
+      }
+      .textWrapper {
+      }
+      img {
+        margin: 0 auto;
+        width: 80%;
+        @media (min-width: 768px) {
+          width: auto;
+        }
+      }
+    }
+    .priceWrap {
+      margin: 0 20px;
+      border-radius: 78px;
+      overflow: hidden;
+      background-color: #179c78;
+      .priceBar {
+        h2 {
+          font-size: 40px;
+          padding: 7px 0;
+          color: #fff;
+          font-family: "AWConquerorInline";
+          @media (min-width: 768px) {
+            padding: 16.5px 0;
+          }
+        }
+      }
+    }
+  }
+  .bottomImg {
+    svg {
+      width: 289px;
+      height: 38px;
+      padding-top: 66px;
+      padding-bottom: 20px;
+      @media (min-width: 768px) {
+        width: 300px;
+        height: 40px;
+      }
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

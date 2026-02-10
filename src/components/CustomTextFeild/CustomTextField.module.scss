@@ -1,0 +1,20 @@
+.customTextField {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 16px;
+
+  &::placeholder {
+    color: #179c78; // green
+    opacity: 1;
+    font-weight: 400;
+  }
+
+  &:focus {
+    border-color: #179c78;
+  }
+}

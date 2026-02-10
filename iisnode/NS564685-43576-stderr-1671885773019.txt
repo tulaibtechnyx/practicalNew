@@ -1,0 +1,6 @@
+(node:43576) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+The object notation for `createReducer` is deprecated, and will be removed in RTK 2.0. Please use the 'builder callback' notation instead: https://redux-toolkit.js.org/api/createReducer
+redux-persist failed to create sync storage. falling back to noop storage.
+[next-auth][warn][NO_SECRET] 
+https://next-auth.js.org/warnings#no_secret

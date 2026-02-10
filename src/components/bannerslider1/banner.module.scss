@@ -1,0 +1,126 @@
+.bannerSlider {
+  // &.isExecutive{
+
+  // }
+  position: relative;
+
+  // .sliderImage {
+  //   position: relative;
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     background: #000000;
+  //     mix-blend-mode: multiply;
+  //     opacity: 0.65;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     z-index: 1;
+  //   }
+  //   img {
+  //     width: 100vw;
+  //     // height: 100%;
+  //     height: 68vh;
+  //     object-fit: cover;
+  //     // @media (min-width: 768px) {
+  //     //   height: 68vh;
+  //     // }
+  //   }
+  // }
+  .video {
+    // height: 68vh;
+    // min-height: 700px;
+    pointer-events: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: black;
+      opacity: 0.5;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .bannerTextwrapper {
+     z-index: 2;
+     position: absolute;
+     width: 100%;
+     max-width: 256px;
+     padding: 0 15px 75px;
+     bottom: 0;
+     min-height: 250px;
+ 
+     @media (min-width: 768px) {
+       left: 66px;
+       max-width: 460px;
+       bottom: 15%;
+       padding: 0 15px 75px;
+     }
+
+     @media (max-height: 800px) {
+       bottom: 0%;
+     }
+
+     @media (min-width: 1441px) {
+      // max-width: 600px;
+      padding: 0 5px 75px;
+      left: 15%;
+    }
+
+    .sliderContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 3;
+
+      @media (min-width: 768px) {
+        justify-content: flex-end;
+      }
+
+      .bannerTitle {
+        font-size: 30px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        font-weight: 500;
+        -webkit-box-orient: vertical;
+
+        @media (min-width: 768px) {
+          font-size: 37px;
+        }
+
+        @media (min-width: 992px) {
+          font-size: 45px;
+        }
+      }
+
+      .bannerDescription {
+        font-size: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        @media (min-width: 768px) {
+          font-size: 19px;
+          margin-bottom: 42px;
+        }
+
+        @media (min-width: 992px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.works_sec {
+  .content {
+    max-width: 292px;
+    margin: auto;
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  .mainHeading {
+    font-weight: 600;
+    font-size: 30px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  .secHeading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  .para {
+    font-weight: 300;
+    font-size: 12px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  .content {
+    text-align: center;
+    .para {
+      padding: 10px 0;
+    }
+  }
+}

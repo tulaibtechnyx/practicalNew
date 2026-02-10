@@ -1,0 +1,64 @@
+.secPartner {
+  padding: 1.57px 0;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+  h2 {
+    max-width: 190px;
+    margin: auto;
+    text-align: center;
+    @media (min-width: 768px) {
+      max-width: 300px;
+      text-align: center;
+    }
+    @media (min-width: 1441px) {
+      max-width: 350px;
+    }
+  }
+  .partnerSliderBox {
+    margin-top: 50px;
+    padding: 0;
+    @media (min-width: 768px) {
+      overflow: hidden;
+      padding: 0 40px;
+    }
+    .sliderDetail {
+      margin: 0 5px;
+      // .postImg {
+      //   a {
+      //     outline: none;
+      //     img {
+      //       margin: auto;
+      //       width: 80%;
+      //       padding: 0 25px;
+      //       @media (min-width: 575px) {
+      //         width: auto;
+      //         padding: 0;
+      //       }
+      //     }
+      //   }
+      // }
+      .postImg {
+        // a {
+    outline: none;
+    img {
+      margin: auto;
+      width: 80%;
+      padding: 0 25px;
+      max-width: 180px;      // Prevents image from being too wide
+      max-height: 100px;     // Prevents image from being too tall
+      object-fit: contain;   // Ensures image scales proportionally
+      display: block;
+
+      @media (min-width: 575px) {
+        width: auto;
+        padding: 0;
+        max-width: 220px;    // Slightly larger on bigger screens
+        max-height: 120px;
+      }
+    }
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+trigger:
+  - production
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  - group: PROD-UAT
+
+stages:
+  - stage: BuildUAT
+    jobs:
+      - job: BuildUAT
+        steps:
+          # Step 1: Install Node.js
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "14.x"
+            #  displayName: 'Install Node.js'
+
+          - task: Bash@3
+            inputs:
+              targetType: "inline"
+              script: |
+                # Write your commands here
+
+                rm -rf .env
+              workingDirectory: "$(Build.SourcesDirectory)"
+
+          # Step 3: Install node modules
+          - script: |
+              npm install --legacy-peer-deps
+            displayName: "Installing node modules"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build-automation/"
+              Contents: ".env.uat"
+              OverWrite: true
+              TargetFolder: "$(Build.SourcesDirectory)/"
+
+          - task: Bash@3
+            inputs:
+              targetType: "inline"
+              script: |
+                # replace filename
+                mv .env.uat .env
+              workingDirectory: "$(Build.SourcesDirectory)/"
+
+          - task: replacetokens@3
+            displayName: "Replace tokens in .env"
+            inputs:
+              rootDirectory: "$(Build.SourcesDirectory)/"
+              targetFiles: .env
+              tokenPrefix: "["
+              tokenSuffix: "]"
+
+          # Step 5: Run the build
+          - script: |
+              node --max_old_space_size=4096 ./node_modules/.bin/next build
+            displayName: "Running Build"
+
+          # Step 6: Copy build artifacts to deployment folder
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build/standalone/"
+              Contents: "**"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/uat/"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build/static/"
+              Contents: "**"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/uat/build/static/"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/public/"
+              Contents: "**"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/uat/public/"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build-automation/"
+              Contents: "web.config"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/uat/"
+
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: "$(Build.SourcesDirectory)/deploy/uat/"
+              includeRootFolder: false
+              archiveType: "zip"
+              archiveFile: "$(Build.ArtifactStagingDirectory)/deploy/uat.zip"
+              replaceExistingArchive: true
+
+          # PROD ENV
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build-automation/"
+              Contents: ".env.prod"
+              OverWrite: true
+              TargetFolder: "$(Build.SourcesDirectory)/"
+
+          - task: Bash@3
+            inputs:
+              targetType: "inline"
+              script: |
+                # replace filename
+                mv .env.prod .env
+              workingDirectory: "$(Build.SourcesDirectory)/"
+
+          - task: replacetokens@3
+            displayName: "Replace tokens in .env"
+            inputs:
+              rootDirectory: "$(Build.SourcesDirectory)/"
+              targetFiles: .env
+              tokenPrefix: "["
+              tokenSuffix: "]"
+
+          # Step 5: Run the build
+          - script: |
+              node --max_old_space_size=4096 ./node_modules/.bin/next build
+            displayName: "Running Build"
+
+          # Step 6: Copy build artifacts to deployment folder
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build/standalone/"
+              Contents: "**"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/prod/"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build/static/"
+              Contents: "**"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/prod/build/static/"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/public/"
+              Contents: "**"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/prod/public/"
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.SourcesDirectory)/build-automation/"
+              Contents: "web.config"
+              TargetFolder: "$(Build.SourcesDirectory)/deploy/prod/"
+
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: "$(Build.SourcesDirectory)/deploy/prod/"
+              includeRootFolder: false
+              archiveType: "zip"
+              archiveFile: "$(Build.ArtifactStagingDirectory)/deploy/prod.zip"
+              replaceExistingArchive: true
+
+          # Step 7: Create a ZIP archive of the deployment folder
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: "$(Build.SourcesDirectory)/deploy"
+              includeRootFolder: false # Set this to true if you want to include the root folder in the ZIP
+              archiveType: "zip"
+              archiveFile: "$(Build.ArtifactStagingDirectory)/deployed-artifact.zip"
+              replaceExistingArchive: true
+
+          # Step 8: Publish the ZIP archive as an artifact
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+              ArtifactName: "deployed-artifact"
+              publishLocation: "Container"

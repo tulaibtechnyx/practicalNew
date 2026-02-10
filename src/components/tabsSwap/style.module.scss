@@ -1,0 +1,45 @@
+.mealDetailWrapper {
+  &.isExecutive{
+    .ctawrapper{
+      button{
+        border-color: #fa7324;
+        color: #fa7324;
+        &:hover{
+          background-color: #fa7324;
+          color: white;
+        }
+      }
+    }
+  }
+  margin-bottom: 40px;
+  padding: 23px 0 23px 0;
+  background-color: #f4f4f8;
+  .mealWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .ctawrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    button {
+      max-width: 174px;
+      width: 100%;
+      margin: 0 10px;
+      font-size: 15px;
+      margin-bottom: 12.5px;
+      @media (min-width: 768px) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

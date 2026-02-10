@@ -1,0 +1,29 @@
+.ErrorWrapper {
+  padding-top: 100px;
+  .sectionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    h1 {
+      padding-bottom: 30px;
+      @media (min-width: 768px) {
+        padding-bottom: 0px;
+      }
+    }
+    .face {
+      svg {
+        width: 100%;
+        .face_svg__st1 {
+          fill: none;
+          stroke: red;
+          stroke-width: 6;
+          stroke-linecap: round;
+        }
+      }
+    }
+  }
+}

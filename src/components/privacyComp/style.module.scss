@@ -1,0 +1,19 @@
+.termwapper {
+  .heading {
+    padding-bottom: 20px;
+  }
+  .para {
+    padding-bottom: 10px;
+    &.sty2 {
+      font-weight: 600;
+    }
+  }
+  .listItems {
+    font-family: "EuclidCircularB";
+    font-weight: 300;
+    li {
+      list-style: disc;
+      font-size: 15px;
+    }
+  }
+}

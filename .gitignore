@@ -1,0 +1,34 @@
+// .gitnignore
+# next.js build output
+.next
+build
+build.zip
+
+# Dependency directories
+node_modules/
+package-lock.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+nextJs.code-workspace
+.vscode
+public/.DS_Store
+public/images/.DS_Store
+.DS_Store
+
+.env
+.env-uat
+.env-prod
+
+report.json
+
+# PWA
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
+public/worker-*.js
+public/worker-*.js.map

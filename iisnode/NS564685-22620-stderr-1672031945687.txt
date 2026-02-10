@@ -1,0 +1,3 @@
+(node:22620) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+error - Failed to load next.config.js, see more info here https://nextjs.org/docs/messages/next-config-error

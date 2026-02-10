@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "EuclidCircularB";
+  src: url("../fonts/EuclidCircularB-Light.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Light.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Light.woff") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "EuclidCircularB";
+  src: url("../fonts/EuclidCircularB-Medium.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Medium.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Medium.woff") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "EuclidCircularB";
+  src: url("../fonts/EuclidCircularB-Semibold.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Semibold.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Semibold.woff") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "AWConquerorInline";
+  src: url("../fonts/AWConquerorInline-Regular.woff2") format("woff2"),
+    url("../fonts/AWConquerorInline-Regular.woff") format("woff"),
+    url("../fonts/AWConquerorInline-Regular.woff") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}

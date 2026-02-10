@@ -1,0 +1,315 @@
+.headingWrapper {
+    width: 100%;
+    padding: 134px 0px 82px 0px;
+
+    @media (max-width: 768px) {
+        padding: 40px 0px 35.7px 0px;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 43.11px;
+        padding-top: 10px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 22.82px;
+        }
+    }
+
+    .title {
+        font-family: "AWConquerorInline";
+        font-weight: 400;
+        font-size: 97px;
+        line-height: 110.87px;
+        text-align: center;
+        color: #179C78;
+
+        @media (max-width: 768px) {
+            font-size: 50px;
+            line-height: 57.15px;
+        }
+    }
+}
+
+.tabsWrapper {
+    background-color: #F4F4F8;
+    padding: 63px 0px 148px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 49px 0px 31px 0px;
+    }
+
+    .titleBox {
+        text-align: center;
+        padding-bottom: 63px;
+
+        .quizDescription {
+            font-size: 14px;
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .quizButton {
+        background-color: #179C78;
+        color: #fff;
+        font-size: 28px;
+        line-height: 32.97px;
+        padding: 16px 28px 15px 28px;
+        border-radius: 50px;
+        text-transform: none;
+        font-weight: 300 !important;
+
+        @media (max-width: 768px) {
+            // margin-top: 18px;
+            font-size: 20px;
+            line-height: 25.36px;
+            padding: 12px 22px 11px 22px;
+        }
+    }
+
+    .quizDescription_below {
+        font-size: 26px;
+        line-height: 32.97px;
+        color: #000;
+        padding-bottom: 10px;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 22.82px;
+        }
+    }
+
+    .tabsParent {
+        max-width: 920px;
+        width: 100%;
+
+        .tabs {
+            @media (max-width: 768px) {
+                margin: 0px 15px;
+            }
+        }
+    }
+
+    .tab {
+        width: 184px;
+        height: 76px;
+        border-radius: 20px 20px 0px 0px;
+        font-family: "EuclidCircularB";
+        text-align: center;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22.82px;
+        // background-color: #ffffff;
+        border: 1.5px solid #179C78;
+        color: #000000;
+
+        transition: ease-in-out 0.5s all;
+        text-transform: capitalize;
+
+        @media (max-width: 768px) {
+            border-radius: 24.5px;
+            margin-right: 6px;
+            width: 160px;
+            height: 40px;
+            font-size: 15px;
+            color: #179C78;
+            line-height: 19.02px;
+        }
+
+        &.activeTab {
+            background-color: #179C78;
+            color: #FFFFFF;
+        }
+    }
+
+    .tabsContentParent {
+        padding: 65px 93px 65px 64px;
+        background-color: #179C78;
+        border-radius: 0px 0px 20px 20px;
+
+        @media (max-width: 768px) {
+            padding: 45px 24px 45px 24px;
+            margin: 10px 10px 0px 10px;
+            border-radius: 20px;
+        }
+
+        .tabPanelContentWrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .weekSelector {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-bottom: 40px;
+
+                .weekButton {
+                    background-color: transparent;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 8px;
+                    padding: 0.5rem 1rem;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+
+                    &.selected {
+                        background-color: white; // A shade of green
+                        color: #179C78;
+                        border-color: #179C78;
+                    }
+                }
+            }
+
+            .mealItemWrapper {
+                max-width: 279px;
+                width: 100%;
+
+
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
+            }
+
+            .quizItemWrapper {
+                max-width: 313px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+
+                @media (max-width: 768px) {
+                    max-width: 217px;
+                    margin-top: 35px;
+                }
+
+                .quizDescription {
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 32.97px;
+                    color: #ffffff;
+
+                    @media (max-width: 768px) {
+                        max-width: 100%;
+                        font-size: 18px;
+                        line-height: 22.82px;
+                    }
+                }
+
+                .quizButton {
+                    font-weight: 400 !important;
+                    background-color: #FFFFFF;
+                    color: #179C78;
+                    font-size: 26px;
+                    line-height: 32.97px;
+                    padding: 14px 25px 13px 25px;
+                    border-radius: 50px;
+                    margin-top: 41px;
+                    text-transform: none;
+
+                    @media (max-width: 768px) {
+                        margin-top: 18px;
+                        font-size: 20px;
+                        line-height: 25.36px;
+                        padding: 12px 22px 11px 22px;
+                    }
+                }
+            }
+
+            .mealItem {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1.5px solid #ffffff;
+                padding-bottom: 20px;
+                flex-wrap: nowrap;
+                margin-bottom: 24px;
+
+                .mealItemData_Discount_price {
+                    display: flex;
+                    // align-items: center;
+                    // justify-content: end;
+                    gap: 3px;
+                    
+                    .discountDetails {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        /* Add margin if needed */
+                    }
+
+                    .mealItemData:nth-child(1) {
+                        min-width: 75px;
+
+                        @media (max-width: 768px) {
+                            min-width: 40px;
+                        }
+                    }
+
+                    .mealItemData:nth-child(2) {
+                        min-width: 75px;
+                        text-decoration: line-through;
+
+                        @media (max-width: 768px) {
+                            min-width: 40px;
+                        }
+                    }
+
+                    .mealItemData:nth-child(3) {
+                        min-width: 40px;
+                        color: #FAD036;
+
+                        @media (max-width: 768px) {
+                            min-width: 40px;
+                        }
+                    }
+
+                }
+
+                .mealItemData {
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    font-family: 500;
+                    line-height: 22.82px;
+
+                    @media (max-width: 768px) {
+                        font-size: 15px;
+                        line-height: 19.02px;
+                    }
+
+                }
+
+                .mealItemData.originalPrice {
+                    /* Style for the original price (e.g., smaller, lighter color, strikethrough) */
+                    text-decoration: line-through;
+                    /* Space between discounted and original price */
+                    /* Add any other specific styling */
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.discount {
+  padding: 27px 0 30px 0;
+  // flex: 0 0 50%; // This was causing the component to not be responsive
+  max-width: 50%;
+  @media (min-width: 768px) {
+    padding: 36px 0 70px 0;
+    
+  }
+
+  .discountWrapper {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+    .discountBox {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .para {
+        padding-bottom: 12px;
+        @media (min-width: 768px) {
+          padding-bottom: 30px;
+        }
+      }
+      @media (min-width: 768px) {
+        margin-right: 0px;
+      }
+      .discountBoxInner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // padding: 0 10px;
+        height: 88px;
+        width: 110px;
+        border-radius: 12px;
+        position: relative;
+        // background-color: #fa7324;
+        background-color: #179C78;
+        h1 {
+          font-size: 30px;
+          @media (min-width: 768px) {
+            font-size: 50px;
+          }
+          @media (min-width: 992px) {
+            font-size: 70px;
+          }
+        }
+        @media (max-width: 768px) {
+            min-height: 150px;
+        }
+        @media (min-width: 768px) {
+          justify-content: center;
+          padding: 0px;
+          height: 196px;
+          width: 196px;
+        }
+      }
+    }
+  }
+  &.isExecutive {
+    box-sizing: border-box;
+    .discountWrapper {
+      height: 100%;
+      .discountBox {
+        @media (min-width: 768px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

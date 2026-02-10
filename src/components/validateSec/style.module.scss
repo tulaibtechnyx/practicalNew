@@ -1,0 +1,141 @@
+.userManagementWrapper {
+  background: url(../../../public/images/banner/slider1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  min-height: calc(100vh - 150px);
+  @media (min-width: 768px) {
+    background: url(../../../public/images/banner/slider1desktopnew.png);
+    min-height: calc(100vh - 270px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+  }
+  .formWrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    @media (min-width: 992px) {
+      margin: auto;
+    }
+  }
+  .userForm {
+    background: rgba(60, 60, 59, 0.9);
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 24px;
+    max-width: 990px;
+    width: 100%;
+
+    .secwrap {
+      display: flex;
+      padding: 60px 0;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        padding: 60px;
+        flex-direction: row;
+      }
+      .CodeSection {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        @media (min-width: 768px) {
+          flex: 0 0 60%;
+          max-width: 60%;
+          text-align: left;
+        }
+        svg {
+          width: 250px;
+          margin-bottom: 30px;
+          @media (min-width: 768px) {
+            width: 324px;
+          }
+        }
+        .paraLg {
+          font-size: 30px;
+        }
+      }
+      .CodeField {
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        @media (min-width: 768px) {
+          flex: 0 0 40%;
+          max-width: 40%;
+        }
+        form {
+          max-width: auto;
+          padding: 0 20px;
+          padding-top: 20px;
+          @media (min-width: 768px) {
+            padding-top: 0px;
+            padding: 0 20px;
+            max-width: 302px;
+          }
+        }
+        &::before {
+          background-color: #fff;
+          width: 1px;
+          height: 100%;
+          content: "";
+          position: absolute;
+          left: -20px;
+        }
+        button {
+          max-width: 255px;
+          width: 100%;
+          @media (min-width: 768px) {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .verifyWrapper {
+      margin: 0 40px 30px;
+      @media (min-width: 992px) {
+        margin: 0 60px 30px;
+      }
+      background-color: #d1ebe4;
+      border-radius: 10px;
+      img {
+        margin-top: 20px;
+        width: 25%;
+        @media (min-width: 575px) {
+          width: 18%;
+        }
+        @media (min-width: 992px) {
+          width: 13%;
+        }
+      }
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        padding-bottom: 25px;
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+        @media (min-width: 992px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

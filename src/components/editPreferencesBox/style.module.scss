@@ -1,0 +1,59 @@
+.editBoxSec {
+  &.isExecutive{
+    .edit_box{
+      &.sty1{
+        background-color: #119A77 !important;
+      }
+      &.sty2{
+        background-color: #fa7324 !important;
+      }
+    }
+    .content{
+      span{
+        color: black !important;
+      }
+    }
+    .calories_txt{
+      h2{
+        color: black !important;
+      }
+      span{
+        color: black !important;
+      }
+    }
+  }
+   .edit_box {
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+    .edit_box_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .content {
+        max-width: 85%;
+        flex: 0 0 85%;
+        .heading1 {
+          font-size: 15px;
+          @media (min-width: 768px) {
+            font-size: 18px;
+          }
+        }
+        .heading2 {
+          font-size: 12px;
+        }
+        @media (max-width: 768px) {
+          max-width: 70%;
+          flex: 0 0 70%;
+        }
+      }
+      .calories_txt {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "EuclidCircularB";
+  src: local("sans-serif"),
+    url("../../public/fonts/EuclidCircularB-Semibold.woff2") format("woff2"),
+    url("../../public/fonts/EuclidCircularB-Semibold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "EuclidCircularB";
+  src: local("sans-serif"),
+    url("../../public/fonts/EuclidCircularB-Light.woff2") format("woff2"),
+    url("../../public/fonts/EuclidCircularB-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EuclidCircularB";
+  src: local("sans-serif"),
+    url("../../public/fonts/EuclidCircularB-Medium.woff2") format("woff2"),
+    url("../../public/fonts/EuclidCircularB-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AWConquerorInline";
+  src: local("sans-serif"),
+    url("../../public/fonts/AWConquerorInline-Regular.woff2") format("woff2"),
+    url("../../public/fonts/AWConquerorInline-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+}
+
+body {
+  font-family: "EuclidCircularB", sans-serif;
+}

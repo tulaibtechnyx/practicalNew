@@ -1,0 +1,42 @@
+.secWeeksWrapper {
+  padding-top: 82px;
+  background-color: #f4f4f8;
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+    padding-top: 82px;
+  }
+}
+.weeksWrapper {
+  padding: 50px 0 17px 0;
+  
+  &.isExecutive{
+    h3{
+      color:#fa7324 !important;
+    
+    }
+  } 
+   @media (min-width: 768px) {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 20px 0;
+  }
+  h3 {
+    span {
+      font-weight: 300;
+      color: #000;
+    }
+  }
+  .buttonWrapper {
+    display: flex;
+    padding-top: 20px;
+    row-gap: 4px;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      padding-top: 0;
+    }
+  }
+}

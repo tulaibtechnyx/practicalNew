@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://practical.me/</loc>
+  <lastmod>2023-07-10T11:34:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+<loc>https://practical.me/ourmenu</loc>
+<lastmod>2023-07-10T11:34:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://practical.me/howitworks</loc>
+<lastmod>2023-07-10T11:34:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://practical.me/partner-offers</loc>
+<lastmod>2023-07-10T11:34:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://practical.me/login</loc>
+<lastmod>2023-07-10T11:34:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://practical.me/macros</loc>
+<lastmod>2023-07-10T11:34:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+
+<url>
+	<loc>https://practical.me/</loc>
+	<video:video>
+		<video:thumbnail_loc></video:thumbnail_loc>
+		<video:title>Banner Video</video:title>
+		<video:description></video:description>
+		<video:content_loc>
+			https://assets.practical.me/public/video/video-check-sm.mp4
+		</video:content_loc>
+	</video:video>
+</url>
+<url>
+	<loc>https://practical.me/macros</loc>
+	<video:video>
+		<video:thumbnail_loc>https://assets.practical.me/public/video/poster-practical.png</video:thumbnail_loc>
+		<video:title>Macro Video</video:title>
+		<video:description></video:description>
+		<video:content_loc>
+			https://assets.practical.me/public/video/macroVideo.mp4
+		</video:content_loc>
+	</video:video>
+</url>
+
+<url>
+	<loc>https://practical.me/result</loc>
+	<video:video>
+		<video:thumbnail_loc>https://assets.practical.me/public/video/poster-practical.png</video:thumbnail_loc>
+		<video:title>Macro Video</video:title>
+		<video:description></video:description>
+		<video:content_loc>
+			https://assets.practical.me/public/video/macroVideo.mp4
+		</video:content_loc>
+	</video:video>
+</url>
+
+<url>
+	<loc>https://practical.me/howitworks</loc>
+	<video:video>
+		<video:thumbnail_loc></video:thumbnail_loc>
+		<video:title>How It Works Video</video:title>
+		<video:description></video:description>
+		<video:content_loc>
+			https://assets.practical.me/public/video/how-it-works.mp4
+		</video:content_loc>
+	</video:video>
+</url>
+</urlset>

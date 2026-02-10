@@ -1,0 +1,275 @@
+.orderHistorySec {
+  padding: 0px 0 50px 0;
+  max-width: 100%;
+  margin: 0 auto;
+  .head_sec_Desktop {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+    .date_meal_plan_wrap {
+      padding: 2px 0;
+      display: flex;
+      justify-content: space-between;
+      @media (min-width: 768px) {
+        padding: 8px 0;
+        max-width: 45%;
+        flex: 0 0 45%;
+      }
+      .orderID {
+        max-width: 20%;
+        flex: 0 0 20%;
+        @media (min-width: 768px) {
+          max-width: 25%;
+          flex: 0 0 25%;
+        }
+      }
+      .date {
+        max-width: 30%;
+        flex: 0 0 30%;
+        @media (min-width: 768px) {
+          max-width: 25%;
+          flex: 0 0 25%;
+        }
+      }
+      .meal_plan {
+        max-width: 50%;
+        flex: 0 0 50%;
+        @media (min-width: 768px) {
+          max-width: 40%;
+          flex: 0 0 40%;
+        }
+        @media (min-width: 992px) {
+          max-width: 50%;
+          flex: 0 0 50%;
+        }
+      }
+    }
+    .duration_sec {
+      padding: 2px 0;
+      display: flex;
+      .durationCheck {
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
+      .PaymentStatus {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+      @media (min-width: 768px) {
+        padding: 8px 0;
+        max-width: 35%;
+        flex: 0 0 35%;
+      }
+    }
+    .status_price_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 0;
+      @media (min-width: 768px) {
+        padding: 8px 0;
+        max-width: 20%;
+        flex: 0 0 20%;
+      }
+      .status {
+        max-width: 30%;
+        flex: 0 0 30%;
+      }
+      .price {
+        max-width: 30%;
+        flex: 0 0 30%;
+        @media (min-width: 768px) {
+          max-width: 40%;
+          flex: 0 0 40%;
+        }
+      }
+      .reset {
+        text-align: center;
+        max-width: 30%;
+        flex: 0 0 30%;
+        @media (min-width: 768px) {
+          max-width: 20%;
+          flex: 0 0 20%;
+        }
+      }
+    }
+  }
+  .order_history {
+    &.Executive {
+      border-color: #d1ebe4 !important;
+      .status_price_wrap {
+        .status {
+          p {
+            color: #fa7324;
+          }
+        }
+        .price {
+          p {
+            color: #fa7324;
+          }
+        }
+      }
+    }
+    padding: 21px;
+    border: 1px solid #d1ebe4;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+      padding: 20.5px 18px;
+      display: flex;
+      justify-content: space-evenly;
+      border-radius: 24px;
+    }
+    .date_meal_plan_wrap {
+      padding: 2px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      justify-content: space-between;
+      @media (min-width: 768px) {
+        justify-content: initial;
+        padding: 8px 0;
+        max-width: 45%;
+        flex: 0 0 45%;
+        justify-content: space-between;
+      }
+      .orderID {
+        margin-bottom: 5px;
+        max-width: 20%;
+        flex: 0 0 20%;
+        @media (min-width: 768px) {
+          max-width: 25%;
+          margin-bottom: 0px;
+          flex: 0 0 25%;
+        }
+      }
+      .date {
+        max-width: 30%;
+        flex: 0 0 30%;
+        margin-bottom: 5px;
+        @media (min-width: 768px) {
+          margin-bottom: 0px;
+          max-width: 25%;
+          flex: 0 0 25%;
+        }
+      }
+      .meal_plan {
+        margin-bottom: 5px;
+        max-width: 100%;
+        flex: 0 0 100%;
+        @media (min-width: 768px) {
+          margin-bottom: 0px;
+          max-width: 40%;
+          flex: 0 0 40%;
+        }
+        @media (min-width: 992px) {
+          margin-bottom: 0px;
+          max-width: 50%;
+          flex: 0 0 50%;
+        }
+      }
+    }
+    .duration_sec {
+      padding: 2px 0;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      @media (min-width: 768px) {
+        margin-bottom: 0px;
+        padding: 8px 0;
+        max-width: 35%;
+        flex: 0 0 35%;
+      }
+      .durationCheck {
+        flex: 0 0 70%;
+        max-width: 70%;
+
+        @media (min-width: 768px) {
+          flex: 0 0 60%;
+          max-width: 60%;
+        }
+      }
+      .PaymentStatus {
+        flex: 0 0 30%;
+        max-width: 30%;
+        @media (min-width: 768px) {
+          flex: 0 0 40%;
+          max-width: 40%;
+        }
+      }
+    }
+    .status_price_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 0;
+      @media (min-width: 768px) {
+        padding: 8px 0;
+        max-width: 20%;
+        flex: 0 0 20%;
+      }
+      .status {
+        max-width: 30%;
+        flex: 0 0 30%;
+      }
+      .price {
+        max-width: 30%;
+        flex: 0 0 30%;
+        @media (min-width: 768px) {
+          max-width: 40%;
+          flex: 0 0 40%;
+        }
+      }
+      .reset {
+        text-align: center;
+        max-width: 20%;
+        flex: 0 0 20%;
+        img {
+          display: block;
+          margin-left: auto;
+          @media (min-width: 768px) {
+            margin-left: 0;
+          }
+        }
+        @media (min-width: 768px) {
+          max-width: 20%;
+          flex: 0 0 20%;
+        }
+      }
+    }
+    .mob_only {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    .ext_mar {
+      margin-top: 1px;
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+  }
+  .disclaimer {
+    padding-left: 0;
+    width: 100%;
+    @media (min-width: 992px) {
+      padding-left: 200px;
+    }
+    @media (min-width: 1400px) {
+      padding-left: 249px;
+    }
+  }
+}
+.orderHeading {
+  padding-top: 205px;
+}
+.anchorArea {
+  cursor: pointer;
+  text-decoration: underline;
+}

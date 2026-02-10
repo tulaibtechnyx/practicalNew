@@ -1,0 +1,61 @@
+.quickSignWrapper {
+  .quickSignup {
+    max-width: 305px;
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-size: 20px;
+      @media (min-width: 768px) {
+        font-size: 32px;
+      }
+      @media (min-width: 992px) {
+        font-size: 45px;
+      }
+    }
+    p {
+      font-size: 12px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
+      @media (min-width: 992px) {
+        font-size: 20px;
+      }
+    }
+    a {
+      max-width: 210px;
+      width: 100%;
+      height: 35px;
+      @media (min-width: 768px) {
+        height: 50px;
+      }
+    }
+    @media (min-width: 768px) {
+      max-width: 51%;
+    }
+    .secContent {
+      margin: 25px auto;
+      max-width: 536px;
+      @media (min-width: 768px) {
+        margin: 24px auto 32px;
+      }
+      @media (min-width: 1441px) {
+        margin: 24px auto 42px;
+      }
+    }
+  }
+  .secBg {
+    margin: 0;
+    margin-top: 3px;
+    @media (min-width: 576px) {
+      margin-top: 20px;
+    }
+    @media (min-width: 768px) {
+      margin-top: 57px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

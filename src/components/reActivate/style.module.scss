@@ -1,0 +1,37 @@
+.reactivateWrapper {
+  max-width: 544px;
+  margin: 0 auto;
+  text-align: center;
+  h2 {
+    font-weight: 600;
+    padding: 47px 40px 25px;
+    @media (min-width: 768px) {
+      padding: 0 120px 40px;
+    }
+    @media (min-width: 992px) {
+      padding: 0 50px 40px;
+    }
+  }
+  .para2 {
+    font-size: 12px;
+    padding: 0 20px;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+  .cta {
+    margin: 25px 0 20px;
+    button {
+      width: 100%;
+      min-width: auto;
+      max-width: 230px;
+      @media (min-width: 768px) {
+        min-width: auto;
+        max-width: 348px;
+      }
+    }
+    &.sty2 {
+      margin: 20px 0 18px;
+    }
+  }
+}

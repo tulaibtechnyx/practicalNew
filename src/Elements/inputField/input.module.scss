@@ -1,0 +1,65 @@
+.fieldWrapper {
+  text-align: center;
+}
+.userInputBox {
+  width: 100%;
+  margin-bottom: 14px !important;
+  max-width: 257px;
+  @media (min-width: 768px) {
+    max-width: 300px;
+  }
+  input {
+    padding: 6.72px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+
+    @media (min-width: 768px) {
+      padding: 10.72px 20px;
+    }
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+    }
+  }
+}
+.userInputBoxImg {
+  width: 100%;
+  margin-bottom: 14px;
+  max-width: 255px;
+  position: relative;
+  @media (min-width: 768px) {
+    max-width: 300px;
+  }
+  &::before {
+    content: "";
+    background-image: url(../../../public/images/thumb/pass.png);
+    position: absolute;
+    height: 15px;
+    background-repeat: no-repeat;
+    top: 11px;
+    left: 15px;
+    width: 9px;
+    @media (min-width: 768px) {
+      top: 15px;
+    }
+  }
+  .css-1l0kngu-MuiInputBase-root-MuiOutlinedInput-root {
+    padding-left: 0;
+  }
+  input {
+    padding: 6.72px 20px;
+    font-size: 16px;
+    text-align: center;
+    @media (min-width: 768px) {
+      padding: 10.72px 20px;
+    }
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+    }
+  }
+}
+.MuiInputBase-input {
+  height: 200px;
+}

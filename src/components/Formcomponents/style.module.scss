@@ -1,0 +1,171 @@
+.quizSelection {
+  button {
+    &.isExecutive {
+      background-color: #119a77;
+      color: #fff;
+      border-color: #119a77;
+      &:hover {
+        background-color: #fef1ea;
+        color: #fa7324;
+        border-color: #fa7324;
+      }
+    }
+  }
+  text-align: center;
+  margin-top: 25px;
+
+  @media (min-width: 768px) {
+    margin-top: 46px;
+  }
+
+  .quizTitle {
+    max-width: 195px;
+    margin: auto;
+    margin-bottom: 25px;
+
+    span {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 25px;
+      max-width: 50%;
+      text-align: center;
+    }
+  }
+
+  .noNote {
+    color: #fa7324;
+    margin: auto;
+  }
+
+  .quizPara {
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    max-width: 224px;
+
+    span {
+      color: #119a77;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 50%;
+    }
+
+    &.sty2 {
+      max-width: 598px;
+      margin-bottom: 30px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin-top: 0;
+        max-width: 598px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .ErrorMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      background-color: #119a77;
+    }
+  }
+
+  .genderSelection {
+    .css-179axbg-MuiButtonBase-root-MuiRadio-root {
+      display: none !important;
+    }
+  }
+}
+
+.dateWrapper {
+  margin-bottom: 10px;
+  padding: 0px 12px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f8;
+  border-radius: 12px;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    padding: 18px 12px 18px 20px;
+  }
+
+  &.sty2 {
+    background-color: #d1ebe4;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 14px 12px 14.42px 20px;
+
+    @media (min-width: 768px) {
+      padding: 27px 12px 27px 20px;
+      margin-bottom: 44px;
+    }
+  }
+
+  .chips {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+  }
+}
+
+.MultidateWrapper {
+  margin-bottom: 10x;
+  padding: 14px 12px 14.42px 20px;
+  background-color: #f4f4f8;
+  border-radius: 12px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+    padding: 27px 12px 27px 20px;
+  }
+
+  .Wrappeinner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .text {
+      display: flex;
+      align-items: center;
+
+      .Btn {
+        margin-left: 5px;
+
+        button {
+          min-width: auto !important;
+          text-transform: lowercase !important;
+          background: #fa7324;
+          border-color: #fa7324;
+          justify-content: center;
+          border-radius: 50px;
+          color: #fff !important;
+          padding: 0;
+          width: 18px;
+          height: 18px;
+          max-width: 100%;
+          font-size: 12px !important;
+          @media (min-width: 768px) {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .chips {
+    text-align: right;
+  }
+}

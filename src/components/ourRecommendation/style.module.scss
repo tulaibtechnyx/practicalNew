@@ -1,0 +1,128 @@
+.boxWrapper {
+  text-align: center;
+  background-image: url(../../../public/images/bg/quiz-bg.png);
+
+  padding: 44px 15px 50px;
+  background-color: #f4f4f8;
+  .boxText {
+    @media (min-width: 768px) {
+      padding-bottom: 10px;
+    }
+    @media (min-width: 1441px) {
+      padding-bottom: 25px;
+    }
+    .heading {
+      margin: 0 auto;
+      max-width: 235px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        max-width: 100%;
+      }
+    }
+    .para {
+      margin: 0 auto;
+      max-width: 290px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        max-width: 60%;
+      }
+      @media (min-width: 1441px) {
+        max-width: 50%;
+      }
+    }
+  }
+  .recommendBoxWrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      max-width: 80%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .contentBox {
+      max-width: 45%;
+      flex: 0 0 45%;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 10px;
+      @media (min-width: 768px) {
+        margin: 0 20px;
+        max-width: inherit;
+        flex: inherit;
+      }
+      .totalQuantityBox {
+        margin-right: 8px;
+        border-radius: 12px;
+        padding: 20px 18px 30px;
+        background-color: #fa7324;
+      }
+      .numberBox {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 20px 0px 30px;
+        background-color: #179c78;
+        width: 100%;
+        @media (min-width: 768px) {
+          padding: 20px 18px 30px;
+          max-width: 182px;
+        }
+      }
+      .quantityText {
+        height: 100%;
+        margin-bottom: 19px;
+        display: flex;
+        align-items: center;
+        .para {
+          margin: 0 auto;
+          max-width: 110px;
+          color: #ffffff;
+          font-size: 10px;
+          font-weight: normal;
+          @media (min-width: 768px) {
+            max-width: 140px;
+          }
+          @media (min-width: 1441px) {
+            font-size: 12px;
+            max-width: 180px;
+          }
+        }
+      }
+      .quantity {
+        padding: 9px 15px;
+        margin: 0px 11.5px 18px;
+        border-radius: 12px;
+        border: 1px solid #ffffff;
+        @media (min-width: 768px) {
+          margin: 0 18px 18px;
+        }
+        .heading {
+          color: #ffffff;
+          font-size: 48px;
+        }
+        .para {
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+      .quantityOtherText {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .para {
+          color: #ffffff;
+          font-weight: normal;
+          font-size: 10px;
+          max-width: 130px;
+          margin: auto;
+          @media (min-width: 768px) {
+            max-width: auto;
+          }
+          @media (min-width: 1441px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

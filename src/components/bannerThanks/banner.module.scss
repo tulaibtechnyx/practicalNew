@@ -1,0 +1,51 @@
+.banner {
+  position: relative;
+
+  &::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+  }
+  .secImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .txtWrapper {
+    z-index: 2;
+    padding: 80px 0 48px 0;
+    position: relative;
+    max-width: 248px;
+    margin: auto;
+    h2 {
+      font-size: 12px;
+      font-weight: 300;
+      @media (min-width: 768px) {
+        font-size: 15px;
+      }
+      @media (min-width: 992px) {
+        font-size: 18px;
+      }
+    }
+    @media (min-width: 992px) {
+      padding: 100px 0 73px;
+      max-width: 500px;
+    }
+    @media (min-width: 768px) {
+      max-width: 500px;
+    }
+    @media (min-width: 1441px) {
+      padding: 77px 0 77px;
+      max-width: 100%;
+    }
+  }
+}

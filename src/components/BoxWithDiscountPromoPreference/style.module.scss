@@ -1,0 +1,195 @@
+.OptionsWrapper {
+    // display: grid;
+    // grid-auto-flow: column;
+    // grid-auto-columns: minmax(40px, 1fr); // each option min 57px, max equal fraction
+    // justify-content: center;
+    // // gap: 10px; // horizontal spacing (adjustable, max 60px)
+    // align-items: start; // allows pills to extend vertically
+    // @media (max-width: 768px) {
+    //     gap: 5px;
+    //     grid-auto-columns: minmax(45px, 1fr);
+    // }
+    // 1. Change to flexbox: Flexbox is better for content-driven width and centering.
+    display: flex;
+    justify-content: center; // Centers the entire group of options.
+    align-items: flex-start; // Retains alignment for pills extending down.
+
+    // 2. Reduce default spacing (gap)
+    gap: 25px; // Smaller gap for mobile
+
+    // 3. Remove grid-auto-columns which forces options to fill available space
+    // grid-auto-columns: minmax(40px, 1fr); // <-- REMOVE THIS
+
+    // 4. Set max-width to constrain the overall wrapper's size. 
+    // This example uses a dynamic calc() based on a common scenario 
+    // (5 options * 55px width + 4 gaps * 8px = 275 + 32 = 307px).
+    // Adjust max-width based on the maximum required width for your number of options.
+    max-width: 400px;
+    margin-left: auto; // Center the wrapper itself
+    margin-right: auto; // Center the wrapper itself
+    @media (max-width: 768px) {
+        // max-width will shrink naturally on smaller screens due to smaller option size
+        gap: 20px; // Smaller gap for mobile
+    }
+    @media (max-width: 450px) {
+    
+        gap: 10px; // Smaller gap for mobile
+    }
+
+    // This section is now unnecessary as flexbox handles the centering and layout.
+    // grid-auto-flow: column; 
+    // justify-content: center;
+    &.belowPillWeekDays {
+        // Specific max-width for smaller option sets like days/weeks (e.g., 3 options * 55px + 2 gaps * 8px = 165 + 16 = 181px)
+        max-width: 200px;
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+
+        // The option will take its minimum content size (55px / 45px / 35px)
+        .optionText {
+            height: 55px;
+            width: 55px;
+            background-color: #e7e7e7;
+            color: #7b7b7b;
+            font-size: 19px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+
+            &.selected {
+                background-color: #179c78;
+                color: #fff !important;
+            }
+
+            &.disabled {
+                background-color: #d6d6d6;
+                pointer-events: none;
+                color: #fff !important;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                height: 45px;
+                width: 45px;
+            }
+
+            @media (max-width: 420px) {
+                font-size: 12px;
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        .optionText:hover {
+            background-color: #cfebe4;
+            color: #179c78 !important;
+        }
+
+        // red line for disabled option
+        // &.disabled {
+        //     &::after {
+        //         position: absolute;
+        //         content: "";
+        //         width: 2px;
+        //         height: 85%;
+        //         background-color: red;
+        //         top: 35%;
+        //         left: 50%;
+        //         transform: translate(-50%, -50%) rotate(45deg);
+        //         z-index: 10;
+        //     }
+        // }
+
+        .upto {
+            position: absolute;
+            border-radius: 50%;
+            top: -30px;
+            right: -8px;
+            height: 35px;
+            font-size: 10px;
+            font-weight: 300;
+        }
+
+        .aboveCapsule {
+            position: absolute;
+            border-radius: 50%;
+            top: -15px;
+            right: -15px;
+            height: 40px;
+            width: 40px;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            line-height: 100%;
+
+            @media (max-width: 768px) {
+                height: 26px;
+                width: 26px;
+                border-radius: 20px;
+                font-size: 8px;
+                padding: 1px;
+                top: -15px;
+                right: -8px;
+            }
+        }
+
+        .belowPillsSpacer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .belowPillsWrapper {
+            margin-top: 6px;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4px;
+            // max-width: 67px;
+            max-width: 55px; // Align with the .optionText width (Desktop)// margin-left: auto;
+            // margin-right: auto;
+
+            @media (max-width: 768px) {
+                max-width: 45px; // Align with the .optionText width (Tablet)
+            }
+        }
+
+        .belowPill {
+            padding: 2px 4px;
+            border-radius: 8px;
+            font-size: 8px;
+            width: max-content;
+            font-weight: 300;
+            word-break: break-all;
+            white-space: normal;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                padding: 2px 3px;
+                font-size: 6px;
+            }
+
+            @media (max-width: 450px) {
+                padding: 1px 2px;
+                font-size: 6px;
+            }
+        }
+    }
+}

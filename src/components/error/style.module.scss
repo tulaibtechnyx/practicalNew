@@ -1,0 +1,32 @@
+.errorSec {
+  &.isExecutive{
+    .ctaHome{
+        background-color: #fa7324;
+        border-color: #fa7324;
+        color: white;
+        &:hover{
+          border-color: #fa7324;
+          color: #fa7324;
+          background-color: #fff;
+        
+      }
+    }
+  }
+  padding-top: 100px;
+  text-align: center;
+  .errorHead {
+    padding: 15px 0;
+  }
+  .errorPara {
+    padding-bottom: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      max-width: 70%;
+    }
+  }
+  .ctaHome {
+
+    padding: 5px 21.5px;
+  }
+}

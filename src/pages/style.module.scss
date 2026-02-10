@@ -1,0 +1,11 @@
+.fouc-handle {
+    &:not(.fouc-ready) {
+        background: #fff;
+    }
+    &.fouc-ready {
+        .home--wrapper__inner {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.promoBox {
+    padding: 30px 40px;
+    background-color: #ffffff;
+    margin: 10px 0px;
+
+    @media (max-width: 768px) {
+        margin: 10px auto;
+        max-width: 317px;
+        border-radius: 24px;
+    }
+    
+    @media (min-width: 768px) {
+        max-width: 397px;
+        margin: 0 auto;
+        border-radius: 24px;
+        padding: 20px 20px 30px;
+    }
+
+    @media (min-width: 992px) {
+        padding: 20px 40px 30px;
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+
+        @media (min-width: 768px) {
+            font-size: 17px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.caloriesSec {
+  max-width: 1276px;
+  margin: 50px 10px 0;
+  background-color: #d1ebe4;
+  border-radius: 24px;
+  @media (min-width: 1301px) {
+    margin: 50px auto 0;
+  }
+  .InnerWrap {
+    padding: 48px 30px 60px;
+    @media (min-width: 768px) {
+      padding: 48px 80px 60px;
+    }
+    @media (min-width: 992px) {
+      padding: 48px 142px 60px;
+    }
+    text-align: center;
+    .caloriesBox {
+      border-radius: 24px;
+      max-width: 278px;
+      margin: 20px auto;
+      border: 1px solid #179c78;
+      &.sty1 {
+        max-width: 366px !important;
+      }
+      h2 {
+        font-weight: 400;
+        padding: 17px;
+        color: #179c78;
+        font-size: 30px;
+        text-align: center;
+        font-family: "AWConquerorInline";
+      }
+    }
+    .Mainhead {
+      padding-bottom: 35px;
+    }
+    .ctaWrap {
+      padding-top: 45px;
+      a {
+        font-weight: 500;
+        max-width: 313px;
+        width: 100%;
+      }
+    }
+  }
+}

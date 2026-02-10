@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsx": "react",
+    "jsx": "react",
+    "baseUrl": "./src/",
+    "paths": {
+      "@helpers/*": ["helpers/*"], // Allows importing from the components folder
+      "@components/*": ["components/*"], // Allows importing from the components folder
+    }
+  }
+}

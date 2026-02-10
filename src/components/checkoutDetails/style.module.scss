@@ -1,0 +1,206 @@
+.checkOutWrapper {
+
+  .MainHeading {
+    padding-top: 0px;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+      padding-top: 50px;
+    }
+  }
+  .secWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    .Details {
+      flex: 0 0 100%;
+      max-width: 100%;
+      @media (min-width: 768px) {
+        flex: 0 0 56%;
+        max-width: 56%;
+      }
+      @media (min-width: 992px) {
+        flex: 0 0 66%;
+        max-width: 66%;
+      }
+      .personalDetail {
+        border-radius: 12px;
+        background-color: #f4f4f8;
+        display: flex;
+        padding: 20px 20px 17px 16px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+          border-radius: 24px;
+        }
+        &.sty2 {
+          .contentSec {
+            &:last-child {
+              text-align: right;
+              @media (min-width: 768px) {
+                text-align: left;
+              }
+            }
+
+            &:first-child {
+              padding-bottom: 16px;
+              flex: 0 0 100%;
+              max-width: 100%;
+              @media (min-width: 992px) {
+                padding-bottom: 0;
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+              }
+            }
+            p {
+              font-size: 15px;
+              padding-right: 0px;
+              @media (min-width: 768px) {
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+        &.sty3 {
+          .contentSec {
+            padding-bottom: 16px;
+            flex: 0 0 100%;
+            max-width: 100%;
+            @media (min-width: 992px) {
+              padding-bottom: 0;
+              flex: 0 0 33.33%;
+              max-width: 33.33%;
+            }
+            p {
+              font-size: 15px;
+              padding-right: 0px;
+              @media (min-width: 768px) {
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+        .contentSec {
+          flex: 0 0 50%;
+          max-width: 50%;
+          .numberWrapper {
+            display: flex;
+            justify-content: space-between;
+          }
+          @media (min-width: 992px) {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+          }
+          p {
+            font-size: 15px;
+            padding-right: 25px;
+            @media (min-width: 768px) {
+              padding-right: 5px;
+            }
+          }
+          .email {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .paraBold {
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 12px;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .summary_details {
+        padding: 18px 20px 14px 20px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        background: #f4f4f8;
+        @media (min-width: 768px) {
+          border-radius: 24px;
+          padding: 30px 20px 20px 20px;
+        }
+        .details_wrapper {
+          display: flex;
+          justify-content: space-between;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .sty1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 19px;
+            @media (min-width: 768px) {
+              font-size: 15px;
+            }
+            &.paraSM {
+              font-weight: 500;
+            }
+          }
+        }
+        .price_wrapper {
+          margin-bottom: 8px;
+          @media (min-width: 768px) {
+            margin-bottom: 17px;
+          }
+        }
+        .discount_wrapper {
+          margin-bottom: 8px;
+          @media (min-width: 768px) {
+            margin-bottom: 16px;
+          }
+          .details_wrapper {
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+        .coupon_wrapper {
+          margin-bottom: 16px;
+          .details_wrapper {
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+        .total_wrapper {
+          padding-top: 6px;
+          border-top: 0.5px solid #787f82;
+          @media (min-width: 768px) {
+            padding-top: 20px;
+          }
+          .details_wrapper {
+            p {
+              font-size: 15px;
+            }
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .Price {
+      flex: 0 0 100%;
+      max-width: 100%;
+      @media (min-width: 768px) {
+        flex: 0 0 42.5%;
+        max-width: 42.5%;
+      }
+      @media (min-width: 992px) {
+        flex: 0 0 31.7%;
+        max-width: 31.7%;
+      }
+    }
+  }
+}

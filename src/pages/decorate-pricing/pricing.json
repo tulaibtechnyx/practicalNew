@@ -1,0 +1,738 @@
+{
+    "TabsArray": [
+        {
+            "key": "upcomingOrders",
+            "icon": null,
+            "label": "Upcoming Orders",
+            "expanded": false,
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "wallet",
+            "icon": null,
+            "label": "Wallet",
+            "expanded": false,
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "renewalOrders",
+            "icon": null,
+            "label": "Renewed Plan",
+            "expanded": false,
+            "condition": false,
+            "showOnDashboard": true
+        },
+        {
+            "key": "freeFood",
+            "icon": null,
+            "label": "Free Food",
+            "expanded": false,
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "additems",
+            "icon": null,
+            "label": "Add Items",
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "editPreferences",
+            "icon": null,
+            "label": "Edit Preferences",
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "macros",
+            "icon": null,
+            "label": "Macros",
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "partnerOffers",
+            "icon": null,
+            "label": "Partner Offers",
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "faqs",
+            "icon": null,
+            "label": "Questions",
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "orderHistory",
+            "icon": null,
+            "label": "Order History",
+            "condition": true,
+            "expandedIndex": null,
+            "showOnDashboard": true
+        },
+        {
+            "key": "codeGenerator",
+            "icon": null,
+            "label": "Code",
+            "expanded": true,
+            "condition": true,
+            "showOnDashboard": true
+        },
+        {
+            "key": "pastOrders",
+            "icon": null,
+            "label": "Past Orders",
+            "condition": false,
+            "showOnDashboard": true
+        },
+        {
+            "key": "cookBooks",
+            "icon": null,
+            "label": "Cook Book",
+            "condition": true,
+            "showOnDashboard": true
+        }
+    ],
+    "showDecoration": true,
+    "decorationArray": [
+        {
+            "options": [
+                {
+                    "pill": {
+                        "text": "1",
+                        "textColor": "#cfebe4",
+                        "backgroundColor": "#FA7324"
+                    },
+                    "value": 1,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": false,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "2",
+                        "textColor": "#fff",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 2,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#fff",
+                            "textlength": 17,
+                            "showElipses": false,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "20% off",
+                        "textColor": "#000",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "3",
+                        "textColor": "#fff",
+                        "backgroundColor": "#179C78"
+                    },
+                    "value": 3,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#fff",
+                            "textlength": 17,
+                            "showElipses": false,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "30% off",
+                        "textColor": "#fff",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#FA7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "4",
+                        "textColor": "#fff",
+                        "backgroundColor": "#cfebe4"
+                    },
+                    "value": 4,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#fff",
+                            "textlength": 17,
+                            "showElipses": false,
+                            "backgroundColor": "#fa7324"
+                        },
+                        {
+                            "text": "Perfect for couples",
+                            "textColor": "#FFFFFF",
+                            "textlength": 19,
+                            "showElipses": true,
+                            "backgroundColor": "#179C78"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "60% off",
+                        "textColor": "#fff",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#FA7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "5",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#119a77"
+                    },
+                    "value": 5,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": false,
+                    "showoptionModal": false,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                }
+            ],
+            "questionId": "meals_deliver_per_day",
+            "description": "For example, you might have 3 Meals a day but only want 2 of them to be delivered by PractiCal. In this case, your answer would be 2. See the ‘i’ button for more information on what we mean by ‘Meals’.For example, you might have 3 Meals a day but only want 2 of them to be delivered by PractiCal.",
+            "questionText": "How many Meals would you like PractiCal to deliver to you per day?",
+            "showOnResult": true,
+            "showOnRenewal": true,
+            "showOnHomePage": true,
+            "showOnThankyou": true,
+            "showoptionModal": true,
+            "showOnQuickSignUp": true,
+            "showOnEditPreference": true
+        },
+        {
+            "options": [
+                {
+                    "pill": {
+                        "text": "0",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 0,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [
+                        {
+                            "disabledValues": [
+                                {
+                                    "text": "",
+                                    "value": 1
+                                }
+                            ],
+                            "sourceQuestionId": "meals_deliver_per_day"
+                        }
+                    ],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "1",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 1,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#FFFFFF",
+                            "textlength": 17,
+                            "showElipses": true,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "20% off",
+                        "upto": false,
+                        "textColor": "#FFFFFF",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "2",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 2,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#FFFFFF",
+                            "textlength": 17,
+                            "showElipses": true,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "30% off",
+                        "upto": false,
+                        "textColor": "#FFFFFF",
+                        "textlength": 10,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "3",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 3,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#FFFFFF",
+                            "textlength": 17,
+                            "showElipses": true,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "40% off",
+                        "upto": false,
+                        "textColor": "#FFFFFF",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "4",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 4,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#FFFFFF",
+                            "textlength": 17,
+                            "showElipses": true,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "40% off",
+                        "upto": false,
+                        "textColor": "#FFFFFF",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "5",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 5,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                }
+            ],
+            "questionId": "snacks_deliver_per_day",
+            "description": "50+ choices a day including Protein Snacks, low sugar bakery, healthy fruits. + Protein Booster Add Ons like Sirloin Steak, Grilled Chicken & Balsamic Prawns\n",
+            "questionText": "How many Snacks would you like PractiCal to deliver to you per day?",
+            "showOnResult": true,
+            "showOnRenewal": true,
+            "showOnHomePage": true,
+            "showOnThankyou": true,
+            "showoptionModal": false,
+            "showOnQuickSignUp": true,
+            "showOnEditPreference": true
+        },
+        {
+            "options": [
+                {
+                    "pill": {
+                        "text": "5 Days",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 5,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "6 Days",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 6,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#fff",
+                            "textlength": 25,
+                            "showElipses": false,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "60% off",
+                        "textColor": "#FFFFFF",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "7 Days",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 7,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#fff",
+                            "textlength": 25,
+                            "showElipses": false,
+                            "backgroundColor": "#fa7324"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "60% off",
+                        "textColor": "#FFFFFF",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                }
+            ],
+            "questionId": "meal_days_per_week",
+            "description": "You will be able to choose the exact days you want in the “Edit Preferences” section of your Personal Portal.",
+            "questionText": "How many days per week would you like your Meal Plan?",
+            "showOnResult": true,
+            "showOnRenewal": true,
+            "showOnHomePage": true,
+            "showOnThankyou": true,
+            "showoptionModal": false,
+            "showOnQuickSignUp": true,
+            "showOnEditPreference": false
+        },
+        {
+            "options": [
+                {
+                    "pill": {
+                        "text": "1 Week",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 1,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "2 Weeks",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 2,
+                    "belowPills": [],
+                    "aboveCapsule": null,
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                },
+                {
+                    "pill": {
+                        "text": "4 Weeks",
+                        "textColor": "#FFFFFF",
+                        "backgroundColor": "#179c78"
+                    },
+                    "value": 4,
+                    "belowPills": [
+                        {
+                            "text": "Limited time deal",
+                            "textColor": "#FFFFFF",
+                            "textlength": 25,
+                            "showElipses": false,
+                            "backgroundColor": "#fa7324"
+                        },
+                        {
+                            "text": "Most popular!",
+                            "textColor": "#FFFFFF",
+                            "textlength": 17,
+                            "showElipses": false,
+                            "backgroundColor": "#179C78"
+                        }
+                    ],
+                    "aboveCapsule": {
+                        "text": "20% off",
+                        "upto": true,
+                        "textColor": "#FFFFFF",
+                        "textlength": 8,
+                        "showElipses": false,
+                        "backgroundColor": "#fa7324"
+                    },
+                    "showOnResult": true,
+                    "tabbySupport": false,
+                    "dynamicStates": [],
+                    "showOnRenewal": true,
+                    "showOnHomePage": true,
+                    "showOnThankyou": true,
+                    "showoptionModal": true,
+                    "showOnQuickSignUp": true,
+                    "showOnEditPreference": true
+                }
+            ],
+            "questionId": "meal_plan_require_weeks",
+            "description": "Some people want to just sign up for one week. Others want to know that they are covered for longer. It is totally up to you. To make sure you never get bored, you can swap your meals at any time, free of charge!.",
+            "questionText": "How long do you want your Meal Plan to last?",
+            "showOnResult": true,
+            "showOnRenewal": true,
+            "showOnHomePage": true,
+            "showOnThankyou": true,
+            "showoptionModal": false,
+            "showOnQuickSignUp": true,
+            "showOnEditPreference": false
+        }
+    ],
+    "showAdditemDecor": true,
+    "checkoutDecoration": [
+        {
+            "type": "meal",
+            "trigger": {
+                "mealsPerDay": {
+                    "$eq": 1
+                },
+                "snacksPerDay": {
+                    "$gte": 1
+                }
+            },
+            "oldValue": 1,
+            "buttonText": "Upgrade to 2 Meals Now",
+            "nextQuestionId": "meals_deliver_per_day",
+            "offeraboveText": "2nd Meals are",
+            "offerbelowText": "for the whole of your plan"
+        },
+        {
+            "type": "meal",
+            "trigger": {
+                "mealsPerDay": {
+                    "$eq": 2
+                },
+                "snacksPerDay": {
+                    "$gte": 1
+                }
+            },
+            "oldValue": 2,
+            "buttonText": "Upgrade to 3 Meals Now",
+            "nextQuestionId": "meals_deliver_per_day",
+            "offeraboveText": "3rd Meals are",
+            "offerbelowText": "for the whole of your plan"
+        },
+        {
+            "type": "snack",
+            "trigger": {
+                "mealsPerDay": {
+                    "$gte": 1
+                },
+                "snacksPerDay": {
+                    "$eq": 0
+                }
+            },
+            "oldValue": 0,
+            "buttonText": "Add Daily Snack",
+            "nextQuestionId": "snacks_deliver_per_day",
+            "offeraboveText": "Snack Special Offer:",
+            "offerbelowText": "(Limited Time)"
+        },
+        {
+            "type": "snack",
+            "trigger": {
+                "mealsPerDay": {
+                    "$gte": 2
+                },
+                "snacksPerDay": {
+                    "$eq": 1
+                }
+            },
+            "oldValue": 1,
+            "buttonText": "Add 2nd Snack",
+            "nextQuestionId": "snacks_deliver_per_day",
+            "offeraboveText": "2nd Snack Special Offer:",
+            "offerbelowText": "(Limited Time)"
+        },
+        {
+            "type": "snack",
+            "trigger": {
+                "mealsPerDay": {
+                    "$gte": 2
+                },
+                "snacksPerDay": {
+                    "$eq": 2
+                }
+            },
+            "oldValue": 2,
+            "buttonText": "Add 3rd Snack",
+            "nextQuestionId": "snacks_deliver_per_day",
+            "offeraboveText": "3rd Snack Special Offer:",
+            "offerbelowText": "(Limited Time)"
+        }
+    ],
+    "showCheckoutDecoration": true,
+    "showEditPrefDecoration": true,
+    "showRenewalEditPrefDecoration": true
+}

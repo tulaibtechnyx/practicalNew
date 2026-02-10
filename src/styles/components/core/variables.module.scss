@@ -1,0 +1,20 @@
+$white: #ffffff;
+$black: #000000;
+$brown: #5d5048;
+$darkBrown: #836551;
+$orange: #cc9064;
+$lightOrange: #d9c0b2;
+$peach: #b38175;
+$gray: #f9f7f6;
+$darkerBrown: #3c2e25;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  xlg: 992px,
+  lg: 1201px,
+  xl: 1441px,
+  xxxl: 1700px,
+  xxl: 1920px
+) !default;

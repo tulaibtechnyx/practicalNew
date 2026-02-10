@@ -1,0 +1,198 @@
+.awesome_food_sec {
+  &.isExecutive{
+    .switch{
+      input:checked[type="checkbox"] {
+        background: #fa7324;
+      }
+    }
+  }
+  padding-top: 50px;
+  @media (min-width: 768px) {
+    padding-top: 50px;
+  }
+  @media (min-width: 1401px) {
+    padding-top: 70px;
+  }
+  .heading {
+    text-align: left;
+    margin-bottom: 22px;
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+
+  .switch {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+      padding-bottom: 36px;
+    }
+    .description {
+      p {
+        padding-right: 5px;
+        font-size: 15px;
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+    }
+    input[type="checkbox"] {
+      position: relative;
+      width: 34px;
+      height: 17px;
+      -webkit-appearance: none;
+      background: #c6c6c6;
+      outline: none;
+      background: #ddd;
+      border-radius: 20px;
+      box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.2);
+      transition: 0.7s;
+    }
+
+    input:checked[type="checkbox"] {
+      background: #119a77;
+    }
+
+    input[type="checkbox"]:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 20px;
+      top: 50%;
+      left: 1.8px;
+      background: #ffffff;
+      transform: scale(1.1) translateY(-50%);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+    }
+
+    input:checked[type="checkbox"]:before {
+      left: 20px;
+    }
+  }
+  .mbSection {
+    .mbWrapper {
+      display: flex;
+      justify-content: flex-start;
+      @media (min-width: 768px) {
+        justify-content: flex-end;
+      }
+      .MbIcon {
+        border: 0.5px solid #179c78;
+        background-color: #179c78;
+        border-radius: 10px;
+        padding: 7px;
+        max-height: 15px;
+        margin-right: 10px;
+        @media (min-width: 768px) {
+          max-height: 22px;
+        }
+        p {
+          font-weight: 500;
+        }
+      }
+      .Mbcontent {
+        max-width: 40%;
+        flex: 0 0 40%;
+        @media (min-width: 768px) {
+          max-width: 30%;
+          flex: 0 0 30%;
+        }
+        @media (min-width: 992px) {
+          max-width: 28%;
+          flex: 0 0 28%;
+        }
+        @media (min-width: 1400px) {
+          max-width: 25%;
+          flex: 0 0 25%;
+        }
+        p {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .content {
+    max-width: 1060px;
+    margin: auto;
+    .content_heading {
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        margin-bottom: 25px;
+      }
+      h1 {
+        font-weight: 600;
+      }
+    }
+    .content_box_sec {
+      height: 100%;
+      margin-bottom: 20px;
+      margin-top: 0;
+      @media (min-width: 768px) {
+        margin-bottom: 40px;
+        margin-top: -60px;
+      }
+      .content_box_wrap {
+        display: flex !important;
+        flex-direction: column;
+        height: 100%;
+        .image {
+          height: 100%;
+          width: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+          // @media (min-width: 768px) {
+          //   height: 226px;
+          //   min-height: 226px;
+          // }
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .food_name {
+          p {
+            font-weight: 600;
+            font-size: 12px;
+            @media (min-width: 768px) {
+              font-size: 18px;
+            }
+          }
+          margin-top: 8px;
+          @media (min-width: 768px) {
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+  }
+  .CtaWrapper {
+    &.isExecutive{
+      a{
+        background-color: white;
+        color: #fa7324 ;
+        border-color: #fa7324 ;
+        &:hover{
+          background-color: #fa7324;
+          color: white;
+        } 
+      }
+    }
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    a {
+      padding: 5px 21.5px !important;
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+}

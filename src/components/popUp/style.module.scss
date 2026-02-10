@@ -1,0 +1,492 @@
+.mainHead {
+  font-size: 30px !important;
+
+  @media (min-width: 768px) {
+    font-size: 45px !important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 60px !important;
+  }
+}
+
+.orderSummaryWrapper {
+  .orderWrapper {
+    padding: 21px 0 27px 0;
+    max-width: 814px;
+    width: 100%;
+    margin: 0 auto;
+
+    .subHead {
+      text-align: left;
+    }
+
+    .orderNum {
+      padding-top: 5px;
+
+      @media (min-width: 768px) {}
+    }
+
+    .personalDetail {
+      border-radius: 12px;
+      background-color: #f4f4f8;
+      display: flex;
+      padding: 20px 20px 17px 16px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+
+      @media (min-width: 768px) {
+        border-radius: 24px;
+      }
+
+      &.sty2 {
+        .contentSec {
+          &:first-child {
+            padding-bottom: 16px;
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            @media (min-width: 992px) {
+              padding-bottom: 0;
+              flex: 0 0 33.33%;
+              max-width: 33.33%;
+            }
+          }
+        }
+      }
+
+      .contentSec {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: left;
+
+        @media (min-width: 992px) {
+          flex: 0 0 33.33%;
+          max-width: 33.33%;
+        }
+
+        p {
+          font-size: 15px;
+          padding-right: 25px;
+
+          @media (min-width: 768px) {
+            padding-right: 50px;
+          }
+        }
+
+        .paraBold {
+          font-weight: 600;
+          margin-bottom: 5px;
+          font-size: 12px;
+
+          @media (min-width: 768px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .summary_details {
+      padding: 18px 20px 14px 20px;
+      border-radius: 24px;
+      background: #f4f4f8;
+
+      @media (min-width: 768px) {
+        padding: 30px 20px 20px 20px;
+      }
+
+      .details_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .sty1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        span {
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 19px;
+
+          @media (min-width: 768px) {
+            font-size: 15px;
+          }
+
+          &.paraSM {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .price_wrapper {
+        margin-bottom: 8px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 18px;
+        }
+
+        .extra_protein_disclaimer {
+          display: flex;
+          justify-content: flex-start;
+          text-align: left;
+        }
+      }
+
+      .discount_wrapper {
+        margin-bottom: 8px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 18px;
+        }
+
+        .details_wrapper {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .coupon_wrapper {
+        margin-bottom: 18px;
+
+        .details_wrapper {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .total_wrapper {
+        padding-top: 6px;
+        border-top: 0.5px solid #787f82;
+
+        @media (min-width: 768px) {
+          padding-top: 20px;
+        }
+
+        .details_wrapper {
+          p {
+            font-size: 15px;
+          }
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.postDetail {
+  &.isExecutive {
+    .caloriesCount {
+      background-color: #fa7324;
+    }
+  }
+
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    margin-top: 8px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  // @media (min-width: 1400px) {
+  //   flex: 0 0 56%;
+  //   max-width: 56%;
+  //   margin-left: 0;
+  //   margin-top: 30px;
+  // }
+  // @media (min-width: 1199px) {
+  //   max-width: 60%;
+  //   flex: 0 0 60%;
+  // }
+  .caloriesCount {
+    flex: 0 0 78px;
+    max-width: 78px;
+    background: #179c78;
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 3.5px 2px;
+    min-width: 78px;
+    height: 20px;
+
+    &.sty2 {
+      background-color: #fab03b;
+    }
+
+    @media (min-width: 768px) {
+      flex: 0 0 88px;
+      max-width: 88px;
+      min-width: 85px;
+      height: 20px;
+    }
+
+    @media (min-width: 768px) {
+      border-radius: 12px;
+      height: 31px;
+      flex: 0 0 120px;
+      max-width: 120px;
+      padding: 7px 2px;
+    }
+
+    p {
+      @media (min-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .boxTitle {
+    @media (min-width: 768px) {
+      font-size: 18px !important;
+    }
+  }
+
+  p {
+    margin-top: 3px;
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+      margin-top: 8px;
+    }
+  }
+}
+
+.boxGrid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1081px) {}
+
+  .para {
+    &.sty2 {
+      min-height: 70.17px;
+    }
+
+    font-size: 15px;
+
+    @media (min-width: 1441px) {
+      font-size: 18px;
+    }
+  }
+
+  .sliderBox {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #179c78;
+
+    &.sty2 {
+      border: 2px solid #fab03b;
+
+      h2 {
+        color: #fab03b;
+      }
+    }
+
+    .boxCol {
+      .para {
+        font-size: 10px;
+        max-width: 80px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: 992px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .para {
+    // min-height: 70.17px;
+    font-size: 15px;
+
+    @media (min-width: 1441px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.userInputBox {
+  width: 100%;
+  margin-bottom: 14px !important;
+  border: 1px solid #179c78 !important;
+
+  // background-color: rgba(0,0,0,0.3);
+  // background-color: rgba(255,255,255,0.5);
+  @media (max-width: 768px) {}
+
+  input {
+    padding: 10px 30px !important;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    border: 1px solid #179c78 !important;
+
+    @media (max-width: 768px) {
+      padding: 10.72px 50px !important;
+    }
+
+    &::placeholder {
+      color: grey;
+      opacity: 0.5;
+    }
+  }
+}
+
+
+.customDialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOverlay 0.3s ease-in;
+
+}
+
+.customDialogContent {
+  // background: #179c78;
+  background: #fff;
+  border-radius: 40px;
+  // padding: 32px 24px;
+  min-width: 50vw;
+  max-width: 80vw;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  overflow-x: hidden;
+  margin-top: 50px;
+  border: 4px solid #fff;
+  outline: 4px solid #179c78;
+  max-height: 80vh;
+  // Scrollbar Styles
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: transparent transparent;
+  /* Hide by default */
+  :global(.MuiPopover-root) {
+    z-index: 1000000 !important;
+  }
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  &:hover::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-thumb:active {
+    background: rgba(150, 150, 150, 0.4); // Light gray
+  }
+
+  animation: fadeInScale 0.35s ease-out; // 👈 add this line
+
+  @media screen and (max-width: 992px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 786px) {
+    max-width: 95vw;
+    max-height: 71vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: auto;
+    min-height: 639.641px;
+  }
+
+  @media screen and (max-height: 880px) {
+    max-height: 97vh;
+    margin-top: 0;
+  }
+
+  @media screen and (max-height: 635px) {
+    max-height: 94vh;
+    min-height: auto;
+  }
+
+    @media (max-width: 375px) and (min-height: 635px) {
+    max-height: 96vh;
+    min-height: auto;
+  }
+
+}
+
+.customDialogClose {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffff;
+  z-index: 50;
+
+  &.green {
+    color: #179c78;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOverlay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
