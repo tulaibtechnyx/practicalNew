@@ -13,7 +13,6 @@ const withPWA = require("@ducanh2912/next-pwa").default({
 
 const nextConfig = {
   reactStrictMode: false,
-  distDir: "build",
   sassOptions: {
     includePaths: [require("path").join(__dirname, "style")]
   },
